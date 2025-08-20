@@ -1,0 +1,1949 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "deleted": false,
+      "description": "Complete collection of 51+ AI APIs ready to test. Clone this repo, import this collection, add your API keys and start testing!",
+      "id": "awesome-ai-master",
+      "name": "Awesome AI - All APIs",
+      "collectionId": "",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Play.ht Voice API",
+      "id": "playht-voice-api",
+      "name": "Play.ht Voice API",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"text\": \"Hello! This is a test of Play.ht voice synthesis.\",\n  \"voice\": \"larry\",\n  \"output_format\": \"mp3\",\n  \"speed\": 1.0\n}",
+          "url": "https://api.play.ht/api/v2/tts",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "AUTHORIZATION",
+              "value": "Bearer {{PLAYHT_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "X-USER-ID",
+              "value": "{{PLAYHT_USER_ID}}",
+              "id": 1,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 2,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Rev.ai Speech-to-Text",
+      "id": "revai-stt",
+      "name": "Rev.ai Speech-to-Text",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"media_url\": \"https://www.rev.ai/FTC_Sample_1.mp3\",\n  \"metadata\": \"Sample audio file\"\n}",
+          "url": "https://api.rev.ai/speechtotext/v1/jobs",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{REVAI_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Whisper API (OpenAI hosted)",
+      "id": "whisper-api",
+      "name": "Whisper API",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "multipart/form-data",
+          "body": "{\n  \"file\": \"@audio.mp3\",\n  \"model\": \"whisper-1\",\n  \"language\": \"en\"\n}",
+          "url": "https://api.openai.com/v1/audio/transcriptions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{OPENAI_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "AssemblyAI Summarize",
+      "id": "assemblyai-summarize",
+      "name": "AssemblyAI Summarize",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"audio_url\": \"https://storage.googleapis.com/aai-docs-samples/nbc.wav\",\n  \"summarization\": true,\n  \"summary_model\": \"informative\",\n  \"summary_type\": \"bullets\"\n}",
+          "url": "https://api.assemblyai.com/v2/transcript",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "authorization",
+              "value": "{{ASSEMBLYAI_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Descript Overdub Voice Cloning",
+      "id": "descript-overdub",
+      "name": "Descript Overdub",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"text\": \"Hello! This is a test of Descript Overdub voice cloning.\",\n  \"voice_id\": \"default\"\n}",
+          "url": "https://api.descript.com/v1/overdub",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{DESCRIPT_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "OpenAI Audio Translations",
+      "id": "openai-audio-translations",
+      "name": "OpenAI Audio Translations",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "multipart/form-data",
+          "body": "{\n  \"file\": \"@german_audio.mp3\",\n  \"model\": \"whisper-1\"\n}",
+          "url": "https://api.openai.com/v1/audio/translations",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{OPENAI_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Azure Speech-to-Text",
+      "id": "azure-stt",
+      "name": "Azure Speech-to-Text",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "audio/wav",
+          "body": "@audio.wav",
+          "url": "https://{{AZURE_ENDPOINT}}.cognitiveservices.azure.com/speechtotext/v3.1/transcriptions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Ocp-Apim-Subscription-Key",
+              "value": "{{AZURE_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "audio/wav",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Azure Text-to-Speech",
+      "id": "azure-tts",
+      "name": "Azure Text-to-Speech",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/ssml+xml",
+          "body": "<speak version='1.0' xml:lang='en-US'><voice xml:lang='en-US' xml:gender='Female' name='en-US-AriaNeural'>Hello! This is a test of Azure text-to-speech.</voice></speak>",
+          "url": "https://{{AZURE_ENDPOINT}}.tts.speech.microsoft.com/cognitiveservices/v1",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Ocp-Apim-Subscription-Key",
+              "value": "{{AZURE_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/ssml+xml",
+              "id": 1,
+              "isEnabled": true
+            },
+            {
+              "key": "X-Microsoft-OutputFormat",
+              "value": "riff-24khz-16bit-mono-pcm",
+              "id": 2,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Murf AI Voice Generation",
+      "id": "murf-ai-voice",
+      "name": "Murf AI Voice",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"text\": \"Hello! This is a test of Murf AI voice generation.\",\n  \"voice\": \"en-US-neural2-A\",\n  \"format\": \"mp3\"\n}",
+          "url": "https://api.murf.ai/v1/speech/generate",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{MURF_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    }
+  ]
+},
+        "variables": {
+          "OPENAI_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 1
+          },
+          "ANTHROPIC_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 2
+          },
+          "GOOGLE_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 3
+          },
+          "MISTRAL_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 4
+          },
+          "COHERE_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 5
+          },
+          "AI21_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 6
+          },
+          "PERPLEXITY_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 7
+          },
+          "OPENROUTER_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 8
+          },
+          "TOGETHER_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 9
+          },
+          "GROQ_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 10
+          },
+          "DEEPSEEK_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 11
+          },
+          "XAI_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 12
+          },
+          "NVIDIA_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 13
+          },
+          "AWS_ACCESS_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 14
+          },
+          "AWS_SECRET_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 15
+          },
+          "AWS_REGION": {
+            "type": "string",
+            "syncValue": "us-east-1",
+            "id": 16
+          },
+          "AZURE_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 17
+          },
+          "AZURE_ENDPOINT": {
+            "type": "string",
+            "syncValue": "",
+            "id": 18
+          },
+          "IBM_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 19
+          },
+          "IBM_PROJECT_ID": {
+            "type": "string",
+            "syncValue": "",
+            "id": 20
+          },
+          "DATABRICKS_TOKEN": {
+            "type": "string",
+            "syncValue": "",
+            "id": 21
+          },
+          "DATABRICKS_ENDPOINT": {
+            "type": "string",
+            "syncValue": "",
+            "id": 22
+          },
+          "STABILITY_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 23
+          },
+          "REPLICATE_API_TOKEN": {
+            "type": "string",
+            "syncValue": "",
+            "id": 24
+          },
+          "HUGGINGFACE_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 25
+          },
+          "DEEPGRAM_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 26
+          },
+          "ASSEMBLYAI_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 27
+          },
+          "SPEECHMATICS_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 28
+          },
+          "ELEVENLABS_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 29
+          },
+          "PLAYHT_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 30
+          },
+          "PLAYHT_USER_ID": {
+            "type": "string",
+            "syncValue": "",
+            "id": 31
+          },
+          "POE_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 32
+          },
+          "RUNWAY_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 33
+          },
+          "REVAI_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 34
+          },
+          "DESCRIPT_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 35
+          },
+          "MURF_API_KEY": {
+            "type": "string",
+            "syncValue": "",
+            "id": 36
+          }
+        }
+      },
+      "type": "collection"
+    },
+    {
+      "deleted": false,
+      "description": "OpenAI's Chat Completions API for conversational AI",
+      "id": "openai-chat",
+      "name": "OpenAI Chat Completions",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"gpt-4\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello! How can you help me today?\"\n    }\n  ],\n  \"max_tokens\": 150\n}",
+          "url": "https://api.openai.com/v1/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{OPENAI_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Anthropic Claude Messages API for conversation",
+      "id": "claude-messages",
+      "name": "Anthropic Claude Messages",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"claude-3-5-sonnet-20241022\",\n  \"max_tokens\": 150,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello! How can you help me today?\"\n    }\n  ]\n}",
+          "url": "https://api.anthropic.com/v1/messages",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "x-api-key",
+              "value": "{{ANTHROPIC_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            },
+            {
+              "key": "anthropic-version",
+              "value": "2023-06-01",
+              "id": 2,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Google Gemini API for multimodal AI",
+      "id": "google-gemini",
+      "name": "Google Gemini",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"contents\": [\n    {\n      \"parts\": [\n        {\n          \"text\": \"Hello! How can you help me today?\"\n        }\n      ]\n    }\n  ]\n}",
+          "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={{GOOGLE_API_KEY}}",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 0,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Mistral AI Chat Completions API",
+      "id": "mistral-chat",
+      "name": "Mistral Chat Completions",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"mistral-large-latest\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello! How can you help me today?\"\n    }\n  ]\n}",
+          "url": "https://api.mistral.ai/v1/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{MISTRAL_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Cohere Chat API",
+      "id": "cohere-chat",
+      "name": "Cohere Chat",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"command-r-plus\",\n  \"message\": \"Hello! How can you help me today?\"\n}",
+          "url": "https://api.cohere.ai/v1/chat",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{COHERE_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "AI21 Labs Jamba API",
+      "id": "ai21-jamba",
+      "name": "AI21 Labs Jamba",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"jamba-instruct\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello! How can you help me today?\"\n    }\n  ]\n}",
+          "url": "https://api.ai21.com/studio/v1/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{AI21_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Perplexity Chat Completions API",
+      "id": "perplexity-chat",
+      "name": "Perplexity Chat Completions",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"llama-3.1-sonar-small-128k-online\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello! How can you help me today?\"\n    }\n  ]\n}",
+          "url": "https://api.perplexity.ai/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{PERPLEXITY_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "OpenRouter API - Route to many LLMs",
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"openai/gpt-4\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello! How can you help me today?\"\n    }\n  ]\n}",
+          "url": "https://openrouter.ai/api/v1/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{OPENROUTER_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Together AI Chat Completions",
+      "id": "together-ai",
+      "name": "Together AI Chat Completions",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello! How can you help me today?\"\n    }\n  ]\n}",
+          "url": "https://api.together.xyz/v1/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{TOGETHER_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Groq OpenAI-compatible API",
+      "id": "groq",
+      "name": "Groq",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"llama3-8b-8192\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello! How can you help me today?\"\n    }\n  ]\n}",
+          "url": "https://api.groq.com/openai/v1/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{GROQ_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "DeepSeek Chat API",
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"deepseek-chat\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello! How can you help me today?\"\n    }\n  ]\n}",
+          "url": "https://api.deepseek.com/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{DEEPSEEK_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "xAI Grok API",
+      "id": "xai-grok",
+      "name": "xAI Grok",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"grok-beta\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello! How can you help me today?\"\n    }\n  ]\n}",
+          "url": "https://api.x.ai/v1/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{XAI_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "NVIDIA NIM LLMs API",
+      "id": "nvidia-nim",
+      "name": "NVIDIA NIM LLMs",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"nvidia/llama3-70b-instruct\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello! How can you help me today?\"\n    }\n  ]\n}",
+          "url": "https://integrate.api.nvidia.com/v1/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{NVIDIA_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Amazon Bedrock Runtime API",
+      "id": "amazon-bedrock",
+      "name": "Amazon Bedrock Runtime",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"anthropic_version\": \"bedrock-2023-05-31\",\n  \"max_tokens\": 150,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello! How can you help me today?\"\n    }\n  ]\n}",
+          "url": "https://bedrock-runtime.{{AWS_REGION}}.amazonaws.com/model/anthropic.claude-3-sonnet-20240229-v1:0/invoke",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "X-Amz-Target",
+              "value": "DynamoDB_20120810.CreateTable",
+              "id": 1,
+              "isEnabled": false
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Azure OpenAI Chat Completions",
+      "id": "azure-openai",
+      "name": "Azure OpenAI Chat Completions",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello! How can you help me today?\"\n    }\n  ],\n  \"max_tokens\": 150\n}",
+          "url": "{{AZURE_ENDPOINT}}/openai/deployments/gpt-4/chat/completions?api-version=2024-02-01",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "api-key",
+              "value": "{{AZURE_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "IBM watsonx.ai Text Generation",
+      "id": "ibm-watsonx",
+      "name": "IBM watsonx.ai Text Generation",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"input\": \"Hello! How can you help me today?\",\n  \"parameters\": {\n    \"max_new_tokens\": 150\n  },\n  \"model_id\": \"ibm/granite-13b-chat-v2\",\n  \"project_id\": \"{{IBM_PROJECT_ID}}\"\n}",
+          "url": "https://us-south.ml.cloud.ibm.com/ml/v1/text/generation?version=2023-05-29",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{IBM_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Databricks Mosaic AI Gateway",
+      "id": "databricks-mosaic",
+      "name": "Databricks Mosaic AI Gateway",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"databricks-meta-llama-3-1-70b-instruct\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello! How can you help me today?\"\n    }\n  ]\n}",
+          "url": "{{DATABRICKS_ENDPOINT}}/serving-endpoints/databricks-meta-llama-3-1-70b-instruct/invocations",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{DATABRICKS_TOKEN}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "OpenAI DALL-E Image Generation",
+      "id": "openai-dalle",
+      "name": "OpenAI DALL-E Image Generation",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"dall-e-3\",\n  \"prompt\": \"A serene landscape with mountains and a lake at sunset\",\n  \"n\": 1,\n  \"size\": \"1024x1024\"\n}",
+          "url": "https://api.openai.com/v1/images/generations",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{OPENAI_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Stability AI Image Generation",
+      "id": "stability-ai",
+      "name": "Stability AI Image Generation",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"prompt\": \"A serene landscape with mountains and a lake at sunset\",\n  \"output_format\": \"webp\"\n}",
+          "url": "https://api.stability.ai/v2beta/stable-image/generate/sd3",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{STABILITY_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Replicate Model Inference",
+      "id": "replicate",
+      "name": "Replicate",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"input\": {\n    \"prompt\": \"A serene landscape with mountains and a lake at sunset\"\n  }\n}",
+          "url": "https://api.replicate.com/v1/models/stability-ai/sdxl:39ed52f2a78e934b3ba6e2a89f5b1c712de7dfea535525255b1aa35c5565e08b/predictions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Token {{REPLICATE_API_TOKEN}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Hugging Face Inference API",
+      "id": "huggingface",
+      "name": "Hugging Face Inference API",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"inputs\": \"Hello! How can you help me today?\"\n}",
+          "url": "https://api-inference.huggingface.co/models/microsoft/DialoGPT-large",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{HUGGINGFACE_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "OpenAI Speech-to-Text (Whisper)",
+      "id": "openai-stt",
+      "name": "OpenAI Speech-to-Text",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "multipart/form-data",
+          "body": "{\n  \"model\": \"whisper-1\",\n  \"file\": \"@audio.mp3\"\n}",
+          "url": "https://api.openai.com/v1/audio/transcriptions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{OPENAI_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "OpenAI Text-to-Speech",
+      "id": "openai-tts",
+      "name": "OpenAI Text-to-Speech",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"tts-1\",\n  \"input\": \"Hello! This is a test of OpenAI text-to-speech.\",\n  \"voice\": \"alloy\"\n}",
+          "url": "https://api.openai.com/v1/audio/speech",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{OPENAI_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Deepgram Speech-to-Text",
+      "id": "deepgram-stt",
+      "name": "Deepgram Speech-to-Text",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"url\": \"https://static.deepgram.com/examples/Bueller-Life-moves-pretty-fast.wav\"\n}",
+          "url": "https://api.deepgram.com/v1/listen?model=nova-2&smart_format=true",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Token {{DEEPGRAM_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "AssemblyAI Speech-to-Text",
+      "id": "assemblyai-stt",
+      "name": "AssemblyAI Speech-to-Text",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"audio_url\": \"https://storage.googleapis.com/aai-docs-samples/nbc.wav\"\n}",
+          "url": "https://api.assemblyai.com/v2/transcript",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "authorization",
+              "value": "{{ASSEMBLYAI_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Speechmatics Speech-to-Text",
+      "id": "speechmatics-stt",
+      "name": "Speechmatics Speech-to-Text",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"url\": \"https://speechmatics.github.io/example-files/sample.wav\",\n  \"config\": {\n    \"type\": \"transcription\",\n    \"transcription_config\": {\n      \"language\": \"en\"\n    }\n  }\n}",
+          "url": "https://asr.api.speechmatics.com/v2/jobs",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{SPEECHMATICS_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "ElevenLabs Text-to-Speech",
+      "id": "elevenlabs-tts",
+      "name": "ElevenLabs Text-to-Speech",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"text\": \"Hello! This is a test of ElevenLabs text-to-speech.\",\n  \"model_id\": \"eleven_monolingual_v1\",\n  \"voice_settings\": {\n    \"stability\": 0.5,\n    \"similarity_boost\": 0.5\n  }\n}",
+          "url": "https://api.elevenlabs.io/v1/text-to-speech/21m00Tcm4TlvDq8ikWAM",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Accept",
+              "value": "audio/mpeg",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            },
+            {
+              "key": "xi-api-key",
+              "value": "{{ELEVENLABS_API_KEY}}",
+              "id": 2,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "PlayHT Text-to-Speech",
+      "id": "playht-tts",
+      "name": "PlayHT Text-to-Speech",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"text\": \"Hello! This is a test of PlayHT text-to-speech.\",\n  \"voice\": \"s3://voice-cloning-zero-shot/d9ff78ba-d016-47f6-b0ef-dd630f59414e/female-cs/manifest.json\",\n  \"output_format\": \"mp3\"\n}",
+          "url": "https://api.play.ht/api/v2/tts",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "AUTHORIZATION",
+              "value": "Bearer {{PLAYHT_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "X-USER-ID",
+              "value": "{{PLAYHT_USER_ID}}",
+              "id": 1,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 2,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "OpenAI GPT-4o Multimodal",
+      "id": "openai-gpt4o",
+      "name": "OpenAI GPT-4o Multimodal",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"gpt-4o\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"What do you see in this image?\"\n        },\n        {\n          \"type\": \"image_url\",\n          \"image_url\": {\n            \"url\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg\"\n          }\n        }\n      ]\n    }\n  ]\n}",
+          "url": "https://api.openai.com/v1/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{OPENAI_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Google Gemini Vision",
+      "id": "google-gemini-vision",
+      "name": "Google Gemini Vision",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"contents\": [\n    {\n      \"parts\": [\n        {\n          \"text\": \"What do you see in this image?\"\n        },\n        {\n          \"inline_data\": {\n            \"mime_type\": \"image/jpeg\",\n            \"data\": \"base64_encoded_image_data_here\"\n          }\n        }\n      ]\n    }\n  ]\n}",
+          "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={{GOOGLE_API_KEY}}",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 0,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Perplexity Vision Chat",
+      "id": "perplexity-vision",
+      "name": "Perplexity Vision",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"llama-3.1-sonar-large-128k-online\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"What do you see in this image?\"\n        },\n        {\n          \"type\": \"image_url\",\n          \"image_url\": {\n            \"url\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg\"\n          }\n        }\n      ]\n    }\n  ]\n}",
+          "url": "https://api.perplexity.ai/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{PERPLEXITY_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "NVIDIA NIM Multimodal",
+      "id": "nvidia-nim-multimodal",
+      "name": "NVIDIA NIM Multimodal",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"nvidia/vila\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": [\n        {\n          \"type\": \"text\",\n          \"text\": \"What do you see in this image?\"\n        },\n        {\n          \"type\": \"image_url\",\n          \"image_url\": {\n            \"url\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg\"\n          }\n        }\n      ]\n    }\n  ]\n}",
+          "url": "https://integrate.api.nvidia.com/v1/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{NVIDIA_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Poe (Quora) AI Chat",
+      "id": "poe-chat",
+      "name": "Poe (Quora) Chat",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"query\": \"Hello! How can you help me today?\",\n  \"bot\": \"Claude-3-Opus\"\n}",
+          "url": "https://api.poe.com/bot/Claude-3-Opus",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{POE_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Meta LLaMA 2 via Bedrock",
+      "id": "meta-llama2",
+      "name": "Meta LLaMA 2",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"prompt\": \"Hello! How can you help me today?\",\n  \"max_gen_len\": 150,\n  \"temperature\": 0.7\n}",
+          "url": "https://bedrock-runtime.{{AWS_REGION}}.amazonaws.com/model/meta.llama2-70b-chat-v1/invoke",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 0,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Stability AI Image-to-Image (Retro)",
+      "id": "stability-retro",
+      "name": "Stability AI Image-to-Image",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "multipart/form-data",
+          "body": "{\n  \"prompt\": \"A vintage style painting\",\n  \"image\": \"@input_image.jpg\",\n  \"strength\": 0.7\n}",
+          "url": "https://api.stability.ai/v2beta/stable-image/generate/sd3",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{STABILITY_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "OpenAI Image Edits",
+      "id": "openai-image-edits",
+      "name": "OpenAI Image Edits",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "multipart/form-data",
+          "body": "{\n  \"image\": \"@image.png\",\n  \"mask\": \"@mask.png\",\n  \"prompt\": \"A sunlit indoor lounge area with a pool containing a flamingo\",\n  \"n\": 1,\n  \"size\": \"1024x1024\"\n}",
+          "url": "https://api.openai.com/v1/images/edits",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{OPENAI_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "OpenAI Image Variations",
+      "id": "openai-image-variations",
+      "name": "OpenAI Image Variations",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "multipart/form-data",
+          "body": "{\n  \"image\": \"@image.png\",\n  \"n\": 2,\n  \"size\": \"1024x1024\"\n}",
+          "url": "https://api.openai.com/v1/images/variations",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{OPENAI_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Replicate Text-to-Image (SDXL)",
+      "id": "replicate-text-to-image",
+      "name": "Replicate Text-to-Image",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"input\": {\n    \"prompt\": \"A serene landscape with mountains and a lake at sunset, highly detailed, 4k\",\n    \"width\": 1024,\n    \"height\": 1024,\n    \"num_inference_steps\": 50\n  }\n}",
+          "url": "https://api.replicate.com/v1/models/stability-ai/sdxl:39ed52f2a78e934b3ba6e2a89f5b1c712de7dfea535525255b1aa35c5565e08b/predictions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Token {{REPLICATE_API_TOKEN}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Runway Gen-2 Video Generation",
+      "id": "runway-gen2",
+      "name": "Runway Gen-2 Video Generation",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"model\": \"gen2\",\n  \"text_prompt\": \"A serene lake with mountains in the background, golden hour lighting\",\n  \"duration\": 4\n}",
+          "url": "https://api.runwayml.com/v1/generate",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{RUNWAY_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Amazon Transcribe Speech-to-Text",
+      "id": "amazon-transcribe",
+      "name": "Amazon Transcribe",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/x-amz-json-1.1",
+          "body": "{\n  \"TranscriptionJobName\": \"test-transcription-job\",\n  \"Media\": {\n    \"MediaFileUri\": \"s3://bucket-name/audio-file.mp3\"\n  },\n  \"MediaFormat\": \"mp3\",\n  \"LanguageCode\": \"en-US\"\n}",
+          "url": "https://transcribe.{{AWS_REGION}}.amazonaws.com/",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/x-amz-json-1.1",
+              "id": 0,
+              "isEnabled": true
+            },
+            {
+              "key": "X-Amz-Target",
+              "value": "Transcribe.StartTranscriptionJob",
+              "id": 1,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "Amazon Polly Text-to-Speech",
+      "id": "amazon-polly",
+      "name": "Amazon Polly",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "application/x-amz-json-1.0",
+          "body": "{\n  \"Text\": \"Hello! This is a test of Amazon Polly text-to-speech.\",\n  \"OutputFormat\": \"mp3\",\n  \"VoiceId\": \"Joanna\"\n}",
+          "url": "https://polly.{{AWS_REGION}}.amazonaws.com/v1/speech",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/x-amz-json-1.0",
+              "id": 0,
+              "isEnabled": true
+            }
+          ]
+        }
+      },
+      "type": "api",
+      "collectionId": "awesome-ai-master"
+    },
+    {
+      "deleted": false,
+      "description": "ElevenLabs Voice Cloning",
+      "id": "elevenlabs-voice-cloning",
+      "name": "ElevenLabs Voice Cloning",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "request": {
+          "contentType": "multipart/form-data",
+          "body": "{\n  \"name\": \"Custom Voice\",\n  \"files\": \"@voice_sample.mp3\",\n  \"description\": \"A custom cloned voice\"\n}",
+          "url": "https://api.elevenlabs.io/v1/voices/add",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "key": "xi-api-key",
+              "value": "{{ELEVENLABS_API_KEY}}",
+              "id": 0,
+              "isEnabled": true
+            }
+          ]
+        }
