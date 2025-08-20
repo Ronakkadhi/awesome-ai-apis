@@ -14,7 +14,7 @@ Skip the API documentation hunt. This repo gives you:
 
 1. **Clone this repo**
    ```bash
-   git clone https://github.com/your-username/awesome-ai.git
+   git clone https://github.com/ronakkadhi/awesome-ai.git
    ```
 
 2. **Import to Requestly**
