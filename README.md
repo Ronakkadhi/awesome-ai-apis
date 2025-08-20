@@ -1,100 +1,123 @@
-# Awesome AI APIs 🤖
+# Awesome AI 🤖
 
-> A curated collection of 50+ AI APIs with working examples and testing tools.
+> A curated collection of 50+ AI APIs with a ready-to-use Requestly collection for instant testing.
 
 ## Why This Exists
 
-Finding and testing AI APIs shouldn't be a hassle. This repo gives you:
-- **Curated APIs** - 50+ vetted AI services across all major categories
-- **Working Examples** - Copy-paste cURL and Fetch examples that actually work
-- **Easy Testing** - Individual API collections for immediate testing
+Skip the API documentation hunt. This repo gives you:
+- **51 AI APIs** - Curated and ready to test
+- **One-Click Import** - Complete Requestly collection with all APIs
+- **Pre-configured Variables** - Just add your API keys and start testing
+- **Working Examples** - Real requests that actually work
 
 ## 🚀 Quick Start
 
-1. **Browse APIs** by category in `/apis/`
-2. **Copy examples** from each API page
-3. **Test immediately** using the provided cURL commands
-4. **Import to Requestly** for advanced testing
+1. **Clone this repo**
+   ```bash
+   git clone https://github.com/your-username/awesome-ai.git
+   ```
 
-```bash
-# Example: Test OpenAI Chat API
-curl -X POST https://api.openai.com/v1/chat/completions \
-  -H "Authorization: Bearer YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{"model":"gpt-4","messages":[{"role":"user","content":"Hello!"}]}'
-```
+2. **Import to Requestly**
+   - Open [Requestly Desktop App](https://requestly.io/desktop/)
+   - Import `requestly-collection.json`
+   - All 51 APIs will be imported instantly
 
-## 📂 API Categories
+3. **Add API Keys**
+   - Go to the Variables section
+   - Add your API keys (OPENAI_API_KEY, ELEVENLABS_API_KEY, etc.)
+   - Keys are stored locally and never shared
 
-| Category | Count | Description |
-|----------|-------|-------------|
-| **Chat & Text LLMs** | 17 | Conversational AI and text generation |
-| **Image Generation** | 8 | Text-to-image and image editing |
-| **Speech & Audio** | 18 | Speech-to-text, text-to-speech, voice cloning |
-| **Multimodal** | 4 | Text + vision + audio combined |
-| **Aggregators** | 4 | Platforms hosting multiple AI models |
+4. **Start Testing**
+   - Click any API → Send request
+   - Modify parameters as needed
+   - Test different AI services instantly
 
-## 🛝 API Playground
+## 🛝 Test APIs Instantly
 
-Test APIs instantly with our examples:
+No more copy-pasting cURL commands or reading docs. Import once, test everything:
 
-```javascript
-// Example: Generate image with DALL·E
-const response = await fetch('https://api.openai.com/v1/images/generations', {
-  method: 'POST',
-  headers: {
-    'Authorization': 'Bearer YOUR_API_KEY',
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({
-    prompt: "A sunset over mountains",
-    n: 1,
-    size: "1024x1024"
-  })
-});
-```
+- **Chat with GPT-4** → Add OPENAI_API_KEY → Send
+- **Generate images with DALL-E** → Same key → Send  
+- **Clone voices with ElevenLabs** → Add ELEVENLABS_API_KEY → Send
+- **Convert speech with AssemblyAI** → Add ASSEMBLYAI_API_KEY → Send
 
-### Advanced API Testing
-
-Want to debug, modify headers, or test complex workflows? 
-
-**Import individual API collections** into Requestly for:
-- Header manipulation
-- Response mocking  
-- Request debugging
-- Environment switching
-- Traffic monitoring
-
-Each API has its own Requestly collection - pick what you need!
+**APIs are pre-configured with example requests. Most work immediately with just API keys.**
 
 ## 📋 All AI APIs
 
 <details>
 <summary>📊 View All 51 APIs</summary>
 
-| Name | Type | Use Cases | API Docs | Requestly |
-|------|------|-----------|----------|-----------|
-| [OpenAI Chat Completions](/apis/chat-llm/openai.md) | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://platform.openai.com/docs/api-reference/chat) | [Import](/playground/requestly-collections/openai.json) |
-| [Anthropic Claude](/apis/chat-llm/claude.md) | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://docs.anthropic.com/claude/reference/messages_post) | [Import](/playground/requestly-collections/claude.json) |
-| [Google Gemini](/apis/chat-llm/gemini.md) | Multimodal LLM | General conversation, Q&A, reasoning | [Docs](https://ai.google.dev/api/rest) | [Import](/playground/requestly-collections/gemini.json) |
-| [Mistral](/apis/chat-llm/mistral.md) | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://docs.mistral.ai/api/) | [Import](/playground/requestly-collections/mistral.json) |
-| [Cohere](/apis/chat-llm/cohere.md) | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://docs.cohere.com/reference/chat) | [Import](/playground/requestly-collections/cohere.json) |
-| [AI21 Labs](/apis/chat-llm/ai21.md) | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://docs.ai21.com/reference/jamba-complete-api-ref) | [Import](/playground/requestly-collections/ai21.json) |
-| [Perplexity](/apis/chat-llm/perplexity.md) | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://docs.perplexity.ai/reference/post_chat_completions) | [Import](/playground/requestly-collections/perplexity.json) |
-| [OpenRouter](/apis/aggregators/openrouter.md) | LLM Router | Aggregator | [Docs](https://openrouter.ai/docs) | [Import](/playground/requestly-collections/openrouter.json) |
-| [Together AI](/apis/chat-llm/together.md) | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://docs.together.ai/reference/chat-completions) | [Import](/playground/requestly-collections/together.json) |
-| [Groq](/apis/chat-llm/groq.md) | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://console.groq.com/docs/quickstart) | [Import](/playground/requestly-collections/groq.json) |
-| [DeepSeek](/apis/chat-llm/deepseek.md) | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://platform.deepseek.com/api-docs/) | [Import](/playground/requestly-collections/deepseek.json) |
-| [xAI Grok](/apis/chat-llm/grok.md) | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://docs.x.ai/api) | [Import](/playground/requestly-collections/grok.json) |
-| [NVIDIA NIM](/apis/chat-llm/nvidia-nim.md) | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://docs.nvidia.com/nim/) | [Import](/playground/requestly-collections/nvidia-nim.json) |
-| [Amazon Bedrock](/apis/aggregators/bedrock.md) | Model Hub | General conversation, Q&A, reasoning | [Docs](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) | [Import](/playground/requestly-collections/bedrock.json) |
-| [Azure OpenAI](/apis/chat-llm/azure-openai.md) | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://learn.microsoft.com/en-us/azure/ai-services/openai/) | [Import](/playground/requestly-collections/azure-openai.json) |
-| [IBM watsonx.ai](/apis/chat-llm/watsonx.md) | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://cloud.ibm.com/apidocs/watsonx-ai) | [Import](/playground/requestly-collections/watsonx.json) |
-| [Databricks Mosaic AI](/apis/aggregators/databricks.md) | Gateway | General conversation, Q&A, reasoning | [Docs](https://docs.databricks.com/en/machine-learning/model-serving/ai-gateway.html) | [Import](/playground/requestly-collections/databricks.json) |
-| [OpenAI DALL·E](/apis/image-generation/dalle.md) | Image Generation | Image Generation | [Docs](https://platform.openai.com/docs/api-reference/images) | [Import](/playground/requestly-collections/dalle.json) |
-| [Stability AI](/apis/image-generation/stability-ai.md) | Image Generation | Image Generation | [Docs](https://platform.stability.ai/docs/api-reference) | [Import](/playground/requestly-collections/stability-ai.json) |
-| [Replicate](/apis/aggregators/replicate.md) | Model Inference | AI Aggregator | [Docs](https://replicate.com/docs/reference/http) | [Import](/playground/requestly-collections/replicate.json) |
-| [Hugging Face](/apis/aggregators/huggingface.md) | Model Inference | AI Aggregator | [Docs](https://huggingface.co/docs/api-inference) | [Import](/playground/requestly-collections/huggingface.json) |
+| Name | Type | Use Cases | Official Docs |
+|------|------|-----------|---------------|
+| OpenAI Chat Completions | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://platform.openai.com/docs/api-reference/chat) |
+| Anthropic Claude | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://docs.anthropic.com/claude/reference/messages_post) |
+| Google Gemini | Multimodal LLM | General conversation, Q&A, reasoning | [Docs](https://ai.google.dev/api/rest) |
+| Mistral | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://docs.mistral.ai/api/) |
+| Cohere | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://docs.cohere.com/reference/chat) |
+| AI21 Labs | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://docs.ai21.com/reference/jamba-complete-api-ref) |
+| Perplexity | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://docs.perplexity.ai/reference/post_chat_completions) |
+| OpenRouter | LLM Router | Aggregator | [Docs](https://openrouter.ai/docs) |
+| Together AI | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://docs.together.ai/reference/chat-completions) |
+| Groq | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://console.groq.com/docs/quickstart) |
+| DeepSeek | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://platform.deepseek.com/api-docs/) |
+| xAI Grok | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://docs.x.ai/api) |
+| NVIDIA NIM | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://docs.nvidia.com/nim/) |
+| Amazon Bedrock | Model Hub | General conversation, Q&A, reasoning | [Docs](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) |
+| Azure OpenAI | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://learn.microsoft.com/en-us/azure/ai-services/openai/) |
+| IBM watsonx.ai | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://cloud.ibm.com/apidocs/watsonx-ai) |
+| Databricks Mosaic AI | Gateway | General conversation, Q&A, reasoning | [Docs](https://docs.databricks.com/en/machine-learning/model-serving/ai-gateway.html) |
+| OpenAI DALL·E | Image Generation | Image Generation | [Docs](https://platform.openai.com/docs/api-reference/images) |
+| Stability AI | Image Generation | Image Generation | [Docs](https://platform.stability.ai/docs/api-reference) |
+| Replicate | Model Inference | AI Aggregator | [Docs](https://replicate.com/docs/reference/http) |
+| Hugging Face | Model Inference | AI Aggregator | [Docs](https://huggingface.co/docs/api-inference) |
+| OpenAI Speech-to-Text | Speech-to-Text | Speech Transcription | [Docs](https://platform.openai.com/docs/api-reference/audio) |
+| OpenAI Text-to-Speech | Text-to-Speech | Speech Synthesis | [Docs](https://platform.openai.com/docs/api-reference/audio) |
+| Deepgram | Speech-to-Text | Speech Transcription | [Docs](https://developers.deepgram.com/reference/listen-live) |
+| AssemblyAI | Speech-to-Text | Speech Transcription | [Docs](https://www.assemblyai.com/docs/api-reference) |
+| Speechmatics | Speech-to-Text | Speech Transcription | [Docs](https://docs.speechmatics.com/introduction) |
+| ElevenLabs | Text-to-Speech | Speech Synthesis | [Docs](https://elevenlabs.io/docs/api-reference) |
+| PlayHT | Text-to-Speech | Speech Synthesis | [Docs](https://docs.play.ht/reference/api-getting-started) |
+| GPT-4o | Multimodal | Text + Image + Audio | [Docs](https://platform.openai.com/docs/models/gpt-4o) |
+| Gemini Vision | Multimodal | Text + Image | [Docs](https://ai.google.dev/gemini-api/docs/vision) |
+| Perplexity Vision | Multimodal | Text + Image | [Docs](https://docs.perplexity.ai/reference/post_chat_completions) |
+| NVIDIA NIM Multimodal | Multimodal | Text + Image | [Docs](https://docs.nvidia.com/nim/) |
+| Poe | Chat LLM | AI Aggregator | [Docs](https://developer.poe.com/server-bots/quick-start) |
+| Meta LLaMA 2 | Chat LLM | General conversation, Q&A, reasoning | [Docs](https://llama.meta.com/docs/) |
+| Stability AI Retro | Image-to-Image | Image Generation | [Docs](https://platform.stability.ai/docs/api-reference) |
+| OpenAI Image Edits | Image Edit | Image Generation | [Docs](https://platform.openai.com/docs/api-reference/images/createEdit) |
+| OpenAI Image Variations | Image Variation | Image Generation | [Docs](https://platform.openai.com/docs/api-reference/images/createVariation) |
+| Replicate Text-to-Image | Image Generation | Image Generation | [Docs](https://replicate.com/docs/reference/http) |
+| Runway Gen-2 | Video Generation | Video Generation | [Docs](https://docs.runwayml.com/reference/inferences) |
+| Amazon Transcribe | Speech-to-Text | Speech Transcription | [Docs](https://docs.aws.amazon.com/transcribe/) |
+| Amazon Polly | Text-to-Speech | Speech Synthesis | [Docs](https://docs.aws.amazon.com/polly/) |
+| ElevenLabs Voice Cloning | Voice Synthesis | Voice Cloning | [Docs](https://elevenlabs.io/docs/api-reference) |
+| Play.ht Voice API | Voice Synthesis | Voice Synthesis | [Docs](https://docs.play.ht/reference/api-getting-started) |
+| Rev.ai | Speech-to-Text | Speech Transcription | [Docs](https://docs.rev.ai/api/asynchronous/) |
+| Whisper API | Speech Transcription | Speech Transcription | [Docs](https://platform.openai.com/docs/api-reference/audio) |
+| AssemblyAI Summarize | Audio Summary | Speech Analysis | [Docs](https://www.assemblyai.com/docs/api-reference) |
+| Descript Overdub | Voice Cloning | Voice Synthesis | [Docs](https://www.descript.com/api) |
+| OpenAI Audio Translations | Speech Translation | Speech Translation | [Docs](https://platform.openai.com/docs/api-reference/audio) |
+| Azure Speech-to-Text | Speech-to-Text | Speech Transcription | [Docs](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/) |
+| Azure Text-to-Speech | Text-to-Speech | Speech Synthesis | [Docs](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/) |
+| Murf AI Voice | Voiceover Generation | Speech Synthesis | [Docs](https://murf.ai/resources/api-documentation/) |
+
+</details>
+
+## 🔑 Required API Keys
+
+Add these variables in Requestly after importing:
+
+**Essential (Most Popular):**
+- `OPENAI_API_KEY` - For GPT, DALL-E, Whisper
+- `ANTHROPIC_API_KEY` - For Claude  
+- `ELEVENLABS_API_KEY` - For voice synthesis
+- `GOOGLE_API_KEY` - For Gemini
+
+**Optional (Based on Usage):**
+- `STABILITY_API_KEY`, `REPLICATE_API_TOKEN`, `ASSEMBLYAI_API_KEY`
+- `GROQ_API_KEY`, `MISTRAL_API_KEY`, `DEEPGRAM_API_KEY`
+- And more... (only add what you need)-inference) | [Import](/playground/requestly-collections/huggingface.json) |
 | [OpenAI Speech-to-Text](/apis/speech/openai-stt.md) | Speech-to-Text | Speech Transcription | [Docs](https://platform.openai.com/docs/api-reference/audio) | [Import](/playground/requestly-collections/openai-stt.json) |
 | [OpenAI Text-to-Speech](/apis/speech/openai-tts.md) | Text-to-Speech | Speech Synthesis | [Docs](https://platform.openai.com/docs/api-reference/audio) | [Import](/playground/requestly-collections/openai-tts.json) |
 | [Deepgram](/apis/speech/deepgram.md) | Speech-to-Text | Speech Transcription | [Docs](https://developers.deepgram.com/reference/listen-live) | [Import](/playground/requestly-collections/deepgram.json) |
@@ -130,22 +153,22 @@ Each API has its own Requestly collection - pick what you need!
 
 ## 🤝 Contributing
 
-Found a great API we missed? Have better examples?
+Found a great AI API we missed? Want to add more examples?
 
 1. Fork this repo
-2. Add your API following the format in existing files
-3. Include working cURL and Fetch examples
-4. Create a Requestly collection JSON
+2. Add the new API to `requestly-collection.json`
+3. Add any new variables needed
+4. Update the README table
 5. Submit a PR
 
-Each API page should include:
-- Basic info and use cases
-- Authentication details  
-- Working code examples
-- Link to official docs
+**Each new API should include:**
+- Proper authentication headers
+- Working example request body
+- Correct endpoint URL
+- Variable for API key
 
 ---
 
 **Made with ❤️ for the developer community**
 
-*All examples work great with [Requestly](https://requestly.io) for advanced API testing* 😉
+*Powered by [Requestly](https://requestly.io) for seamless API testing* 🚀
