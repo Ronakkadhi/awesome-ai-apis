@@ -1,4 +1,4 @@
-# Awesome AI 🤖
+# Awesome AI APIs 🤖
 
 > A curated collection of 50+ AI APIs with working examples and testing tools.
 
