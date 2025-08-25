@@ -70,19 +70,13 @@ Skip the API documentation hunt. This repo provides:
   - Always refer to official documentation for the most up-to-date requirements.
 
 ### 🤝 Contributing
-  
-  - Found a great AI API we missed? Want to add more examples?
-  - Fork this repo.
-  - Add the new API to an existing or new provider JSON file.
-  - Add any new variables needed.
-  - Update the README table.
-  - Submit a PR.
-
-    Each new API should include:
-  - Proper authentication headers
-  - Working example request body
-  - Correct endpoint URL
-  - Variables
+    - Found a great AI API we missed? Want to add more examples?
+    - Fork this repo.
+    - Add the new API to an existing or new provider JSON file.
+    - Add any new variables needed.
+    - Update the README table.
+    - Submit a PR.
+    - Each new API should include: Proper authentication headers, Variables, and Body
 
 -----
 
