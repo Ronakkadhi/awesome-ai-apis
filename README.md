@@ -36,10 +36,10 @@ Skip the API documentation hunt. This repo provides:
       - Modify parameters as needed.
       - Test different AI services instantly.
 
-<details>
 ### 📋 All AI APIs
-
 This collection is organized by provider. Each JSON file contains a full suite of APIs for that provider, including chat, image generation, and more.
+
+<details>
 
   <summary>Click to expand</summary>
 | Name | Provider | Type | Use Cases | Docs / Website | Requestly JSON |
