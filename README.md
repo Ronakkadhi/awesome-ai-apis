@@ -76,7 +76,7 @@ Skip the API documentation hunt. This repo provides:
     - Add any new variables needed.
     - Update the README table.
     - Submit a PR.
-    - Each new API should include: Proper authentication headers, Variables, and Body
+    - Each new API should include: Proper authentication headers, variables, and body
 
 -----
 
