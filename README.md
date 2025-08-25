@@ -36,11 +36,9 @@ Skip the API documentation hunt. This repo provides:
       - Modify parameters as needed.
       - Test different AI services instantly.
 
-### 📋 All AI APIs
-This collection is organized by provider. Each JSON file contains a full suite of APIs for that provider, including chat, image generation, and more.
-
 <details>
 <summary>📋 View All 21 APIs</summary>
+
 | Name | Provider | Type | Use Cases | Docs / Website | Requestly JSON |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | OpenAI (Chat Completions) | OpenAI | Text/Chat LLM | General-purpose conversation, Q&A, reasoning | [Docs](https://platform.openai.com/docs/api-reference/chat) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
@@ -63,7 +61,6 @@ This collection is organized by provider. Each JSON file contains a full suite o
 | ElevenLabs V3 | ElevenLabs | Text-to-Speech | Speech (STT / TTS / Voice) | [Docs](https://elevenlabs.io/docs/api-reference) | *Coming Soon* |
 | AssemblyAI Summarize | AssemblyAI | Summary from audio | Speech (STT / TTS / Voice) | [Docs](https://www.assemblyai.com/docs/api-reference) | *Coming Soon* |
 | AssemblyAI (STT) | AssemblyAI | Speech-to-Text | Speech (STT / TTS / Voice) | [Docs](https://www.assemblyai.com/docs/api-reference) | *Coming Soon* |
-
 
 </details>
 
