@@ -86,6 +86,9 @@ Skip the API documentation hunt. This repo provides:
 
 -----
 
-**Made with ❤️ for the developer community**
+A Note on the Tech Stack *Powered by [Requestly](https://requestly.io) for seamless API testing* 🚀
+This project is made possible by the Requestly API Client, which offers several key advantages over traditional API testing tools like Postman.
+Unlike cloud-based tools, Requestly's desktop application works completely offline, allowing you to test and develop your APIs from anywhere, without an internet connection.
+Requestly also doesn't require a login to get started. Finally, because the entire collection is git-controlled, you can easily track changes, collaborate with others, and manage different versions of your API collections just like you would with your codebase. This allows for a more streamlined and reliable developer workflow.
 
-*Powered by [Requestly](https://requestly.io) for seamless API testing* 🚀
+**Made with ❤️ for the developer community**
