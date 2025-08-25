@@ -41,7 +41,7 @@ Skip the API documentation hunt. This repo provides:
 
 | Name | Provider | Type | Use Cases | Docs / Website | Requestly JSON |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| OpenAI (Chat Completions) | OpenAI | Text/Chat LLM | General-purpose conversation, Q&A, reasoning | [Docs](https://platform.openai.com/docs/api-reference/chat) | [OpenAI.json]([https://raw.githubusercontent.com/Ronakkadhi/awesome-ai-apis/refs/heads/main/OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json)) |
+| OpenAI (Chat Completions) | OpenAI | Text/Chat LLM | General-purpose conversation, Q&A, reasoning | [Docs](https://platform.openai.com/docs/api-reference/chat) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
 | OpenAI Images (DALL·E) | OpenAI | Image Generation | Image Generation | [Docs](https://platform.openai.com/docs/api-reference/images) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
 | OpenAI Audio (Speech-to-Text) | OpenAI | Speech-to-Text | Speech (STT / TTS / Voice) | [Docs](https://platform.openai.com/docs/api-reference/audio) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
 | OpenAI Audio (Text-to-Speech) | OpenAI | Text-to-Speech | Speech (STT / TTS / Voice) | [Docs](https://platform.openai.com/docs/api-reference/audio) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
