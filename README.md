@@ -65,20 +65,6 @@ Skip the API documentation hunt. This repo provides:
 </details>
 
 
-| Provider | Description | Use Cases | Official Docs | Requestly JSON |
-| :--- | :--- | :--- | :--- | :--- |
-| OpenAI | The largest collection with APIs for chat, image generation, speech-to-text, and more. | Chat, Image Generation, Voice/Speech, Code | [Docs](https://platform.openai.com/docs/api-reference) | [OpenAI.json](https://www.google.com/search?q=https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
-| Groq | Known for high-speed LLM inference. | Low-latency Chat, Q\&A, reasoning | [Docs](https://console.groq.com/docs/quickstart) | [Groq.json](https://www.google.com/search?q=https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/Groq.json) |
-| Anthropic | Focuses on safe and helpful AI, with APIs for chat and messages. | Chat, Q\&A, reasoning | [Docs](https://docs.anthropic.com/en/api/messages) | [Claude.json](https://www.google.com/search?q=https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/Claude.json) |
-| Google Gemini | Provides a multimodal LLM for text, image, and audio tasks. | Multimodal Chat, Image Analysis, Content Generation | [Docs](https://ai.google.dev/api/rest) | [Gemini.json](https://www.google.com/search?q=https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/Gemini.json) |
-| OpenRouter | An aggregator for multiple LLM models, often with free tiers. | Aggregator, Model Comparison, Chat | [Docs](https://openrouter.ai/docs) | [OpenRouter.json](https://www.google.com/search?q=https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenRouter.json) |
-| Mistral | Focused on powerful, open-source-based chat models. | Chat, Q\&A, reasoning | [Docs](https://docs.mistral.ai/api/) | *Coming Soon* |
-| Perplexity | Known for its conversational AI and fast responses. | Chat, Web Search, Summarization | [Docs](https://docs.perplexity.ai/reference/post_chat_completions) | *Coming Soon* |
-| Together AI | Provides access to a wide range of open-source models with high performance. | Chat, Q\&A, reasoning | [Docs](https://docs.together.ai/reference/chat-completions) | *Coming Soon* |
-| Stability AI | Specializes in open-source-based image generation models. | Image Generation, Image-to-Image | [Docs](https://platform.stability.ai/docs/api-reference) | *Coming Soon* |
-| ElevenLabs | The industry standard for high-quality text-to-speech and voice cloning. | Text-to-Speech, Voice Cloning | [Docs](https://elevenlabs.io/docs/api-reference) | *Coming Soon* |
-| AssemblyAI | Provides a robust API for speech-to-text with advanced features. | Speech-to-Text, Audio Summarization | [Docs](https://www.assemblyai.com/docs/api-reference) | *Coming Soon* |
-
 ### ⚠️ Important Notes
 
   - **Most APIs work immediately with just API keys**, but some may require additional setup.
