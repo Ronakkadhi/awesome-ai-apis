@@ -36,8 +36,7 @@ Skip the API documentation hunt. This repo provides:
       - Modify parameters as needed.
       - Test different AI services instantly.
 
-<details>
-<summary>📋 View All 21 APIs</summary>
+Access All 21 APIs here
 
 | Name | Provider | Type | Use Cases | Docs / Website | Requestly JSON |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -61,8 +60,6 @@ Skip the API documentation hunt. This repo provides:
 | ElevenLabs V3 | ElevenLabs | Text-to-Speech | Speech (STT / TTS / Voice) | [Docs](https://elevenlabs.io/docs/api-reference) | *Coming Soon* |
 | AssemblyAI Summarize | AssemblyAI | Summary from audio | Speech (STT / TTS / Voice) | [Docs](https://www.assemblyai.com/docs/api-reference) | *Coming Soon* |
 | AssemblyAI (STT) | AssemblyAI | Speech-to-Text | Speech (STT / TTS / Voice) | [Docs](https://www.assemblyai.com/docs/api-reference) | *Coming Soon* |
-
-</details>
 
 
 ### ⚠️ Important Notes
