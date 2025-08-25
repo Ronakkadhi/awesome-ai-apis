@@ -39,9 +39,8 @@ Skip the API documentation hunt. This repo provides:
 ### 📋 All AI APIs
 This collection is organized by provider. Each JSON file contains a full suite of APIs for that provider, including chat, image generation, and more.
 
-<details> Click to expand </summary>
-
-  <summary> 
+<details>
+<summary>📋 View All 21 APIs</summary>
 | Name | Provider | Type | Use Cases | Docs / Website | Requestly JSON |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | OpenAI (Chat Completions) | OpenAI | Text/Chat LLM | General-purpose conversation, Q&A, reasoning | [Docs](https://platform.openai.com/docs/api-reference/chat) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
