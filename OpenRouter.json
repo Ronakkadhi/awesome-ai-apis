@@ -1,0 +1,326 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open Router/",
+      "collectionId": "",
+      "name": "Open Router",
+      "description": "# OpenRouter API Collection\nOpenRouter is a aggregator of all the LLM models\n\n## Authentication\n- **Type:** Bearer Token\n- **Header:** `Authorization: Bearer {{OPENROUTER_API_KEY}}`\n\n## Documentation\n- **API Docs:** https://openrouter.ai/docs\n- **Pricing:** https://openrouter.ai/docs#pricing\n- **Rate Limits:** Varies by model\n\n## Getting Started\n1. Get API key from https://openrouter.ai/keys\n2. Set `OPENROUTER_API_KEY` variable\n3. Test with \"List Models\" request",
+      "deleted": false,
+      "type": "collection",
+      "data": {
+        "variables": {
+          "OPENROUTER_API_KEY": {
+            "id": 0,
+            "type": "string",
+            "syncValue": "your-api-key"
+          },
+          "OPENROUTER_BASE_URL": {
+            "id": 1,
+            "type": "string",
+            "syncValue": "https://openrouter.ai/api/v1"
+          },
+          "OPENROUTER_SITE_URL": {
+            "id": 2,
+            "type": "string",
+            "syncValue": "https://localhost:3000"
+          },
+          "GPT_OSS_120B": {
+            "id": 3,
+            "type": "string",
+            "syncValue": "openai/gpt-oss-120b"
+          },
+          "GPT_OSS_20B": {
+            "id": 4,
+            "type": "string",
+            "syncValue": "openai/gpt-oss-20b:free"
+          },
+          "{{OPENROUTER_APP_NAME}}": {
+            "id": 5,
+            "type": "string",
+            "syncValue": "Your App name"
+          }
+        },
+        "auth": {}
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open Router/e74d23ee-0985-419f-a225-7155a5ffc597.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open Router/",
+      "name": "Credit Check",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{OPENROUTER_BASE_URL}}/auth/key",
+          "queryParams": [],
+          "method": "GET",
+          "headers": [
+            {
+              "id": 1756139316891,
+              "key": "Authorization",
+              "value": "Bearer {{OPENROUTER_API_KEY}}",
+              "isEnabled": true
+            },
+            {
+              "id": 1756139769145,
+              "key": "HTTP-Referer",
+              "value": "{{OPENROUTER_SITE_URL}}",
+              "isEnabled": true
+            },
+            {
+              "id": 1756139805031,
+              "key": "Content-Type",
+              "value": "application/json",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open Router/6b42d10f-786c-4b13-aa5f-63ee6733b9e9.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open Router/",
+      "name": "Free Models",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{OPENROUTER_BASE_URL}}/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1756139430184,
+              "key": "Authorization",
+              "value": "Bearer {{OPENROUTER_API_KEY}}",
+              "isEnabled": true
+            },
+            {
+              "id": 1756139963780,
+              "key": "HTTP-Referer",
+              "value": "{{OPENROUTER_SITE_URL}}",
+              "isEnabled": true
+            },
+            {
+              "id": 1756139987451,
+              "key": "Content-Type",
+              "value": "application/json",
+              "isEnabled": true
+            }
+          ],
+          "body": "{\n  \"model\": \"{{OPENROUTER_FREE_MODEL}}\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Say hello and tell me your model name\"\n    }\n  ],\n  \"max_tokens\": 50\n}",
+          "bodyContainer": {
+            "text": "{\n  \"model\": \"{{OPENROUTER_FREE_MODEL}}\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Say hello and tell me your model name\"\n    }\n  ],\n  \"max_tokens\": 50\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open Router/4b286bd2-7080-4f8f-bfc1-5ab68897cf4b.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open Router/",
+      "name": "List Models",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{OPENROUTER_BASE_URL}}/models",
+          "queryParams": [],
+          "method": "GET",
+          "headers": [
+            {
+              "id": 1756138496987,
+              "key": "Authorization",
+              "value": "Bearer {{OPENROUTER_API_KEY}}",
+              "isEnabled": true
+            },
+            {
+              "id": 1756138508092,
+              "key": "HTTP-Referer",
+              "value": "{{OPENROUTER_SITE_URL}}",
+              "isEnabled": true
+            },
+            {
+              "id": 1756138523584,
+              "key": "Content-Type",
+              "value": "application/json",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open Router/d7af3967-b8e1-4dc7-a7b9-61aeb45ca191.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open Router/",
+      "name": "Model Comparison Test",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{OPENROUTER_BASE_URL}}/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1756139767653,
+              "key": "Authorization",
+              "value": "Bearer {{OPENROUTER_API_KEY}}",
+              "isEnabled": true
+            },
+            {
+              "id": 1756141080121,
+              "key": "HTTP-Referer",
+              "value": "{{OPENROUTER_SITE_URL}}",
+              "isEnabled": true
+            },
+            {
+              "id": 1756141107460,
+              "key": "Content-Type",
+              "value": "application/json",
+              "isEnabled": true
+            }
+          ],
+          "body": "{\n  \"model\": \"meta-llama/llama-3.1-8b-instruct:free\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"What are the advantages of using OpenRouter vs direct API calls?\"\n    }\n  ],\n  \"max_tokens\": 250\n}",
+          "bodyContainer": {
+            "text": "{\n  \"model\": \"meta-llama/llama-3.1-8b-instruct:free\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"What are the advantages of using OpenRouter vs direct API calls?\"\n    }\n  ],\n  \"max_tokens\": 250\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open Router/9d68e1c3-d510-46ee-8b03-dfd600576ab9.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open Router/",
+      "name": "Open AI OSS 120B ",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{OPENROUTER_BASE_URL}}/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1756139501315,
+              "key": "Authorization",
+              "value": "Bearer {{OPENROUTER_API_KEY}}",
+              "isEnabled": true
+            }
+          ],
+          "body": "{\n  \"model\": \"{{GPT_OSS_120B}}\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful AI assistant.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Explain the difference between GPT-3.5 and GPT-4 in simple terms\"\n    }\n  ],\n  \"max_tokens\": 300,\n  \"temperature\": 0.7\n}",
+          "bodyContainer": {
+            "text": "{\n  \"model\": \"{{GPT_OSS_120B}}\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful AI assistant.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Explain the difference between GPT-3.5 and GPT-4 in simple terms\"\n    }\n  ],\n  \"max_tokens\": 300,\n  \"temperature\": 0.7\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open Router/34e6d211-f9cc-4a13-b1ee-1d421193363b.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open Router/",
+      "name": "OpenAI OSS 20B",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{OPENROUTER_BASE_URL}}/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1756139573322,
+              "key": "Authorization",
+              "value": "Bearer {{OPENROUTER_API_KEY}}",
+              "isEnabled": true
+            }
+          ],
+          "body": "{\n  \"model\": \"{{GPT_OSS_20B}}\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Write a short poem about artificial intelligence\"\n    }\n  ],\n  \"max_tokens\": 200,\n  \"temperature\": 0.8\n}",
+          "bodyContainer": {
+            "text": "{\n  \"model\": \"{{GPT_OSS_20B}}\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Write a short poem about artificial intelligence\"\n    }\n  ],\n  \"max_tokens\": 200,\n  \"temperature\": 0.8\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    }
+  ]
+}

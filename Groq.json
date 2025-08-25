@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Groq/",
+      "collectionId": "",
+      "name": "Groq",
+      "description": "Overview\nThe Groq API is designed for high-speed inference of large language models (LLMs).\n\nAuthentication\nType: Bearer Token\n\nHeader: Authorization: Bearer {{GROQ_API_KEY}}\n\nDocumentation\nAPI Docs: https://api.groq.com/openai/v1\n\nPricing: https://groq.com/docs/api-reference/pricing\n\nRate Limits: Varies by model\n\nGetting Started\nGet an API key from https://console.groq.com/keys\n\nSet the GROQ_API_KEY variable.\n\nTest with the \"List Models\" request.",
+      "deleted": false,
+      "type": "collection",
+      "data": {
+        "variables": {},
+        "auth": {}
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Groq/5f65267c-552b-4d64-9224-11413062821b.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Groq/",
+      "name": "Groq Chat Completion",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{GROQ_BASE_URL}}/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1756146475598,
+              "key": "Authorization",
+              "value": "Bearer {{GROQ_API_KEY}}",
+              "isEnabled": true
+            },
+            {
+              "id": 1756146502487,
+              "key": "Content-Type",
+              "value": "application/json",
+              "isEnabled": true
+            }
+          ],
+          "body": "{\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Explain the importance of low-latency AI inference.\"\n    }\n  ],\n  \"model\": \"{{GROQ_MODEL}}\",\n  \"temperature\": 0.5,\n  \"max_tokens\": 1024\n}",
+          "bodyContainer": {
+            "text": "{\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Explain the importance of low-latency AI inference.\"\n    }\n  ],\n  \"model\": \"{{GROQ_MODEL}}\",\n  \"temperature\": 0.5,\n  \"max_tokens\": 1024\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Groq/67c0e755-ed07-4fac-b88d-ad665d5163ee.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Groq/",
+      "name": "List Models",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{GROQ_BASE_URL}}/models",
+          "queryParams": [],
+          "method": "GET",
+          "headers": [
+            {
+              "id": 1756146114810,
+              "key": "Authorization",
+              "value": "Bearer {{GROQ_API_KEY}}",
+              "isEnabled": true
+            },
+            {
+              "id": 1756146132566,
+              "key": "Content-Type",
+              "value": "application/json",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Groq/5303f4d1-b398-418a-b2ea-fa3422ef881a.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Groq/",
+      "name": "Meta-Llama 3.1 8B ",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{GROQ_BASE_URL}}/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1756146387051,
+              "key": "Authorization",
+              "value": "Bearer {{GROQ_API_KEY}}",
+              "isEnabled": true
+            },
+            {
+              "id": 1756146415904,
+              "key": "Content-Type",
+              "value": "application/json",
+              "isEnabled": true
+            }
+          ],
+          "body": "{\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Write a short story about an astronaut who finds a peculiar plant on a new planet.\"\n    }\n  ],\n  \"model\": \"llama-3.1-8b-instruct\",\n  \"temperature\": 0.7,\n  \"max_tokens\": 512\n}",
+          "bodyContainer": {
+            "text": "{\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Write a short story about an astronaut who finds a peculiar plant on a new planet.\"\n    }\n  ],\n  \"model\": \"llama-3.1-8b-instruct\",\n  \"temperature\": 0.7,\n  \"max_tokens\": 512\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Groq/95309f14-eab1-4044-89fe-69061361c186.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Groq/",
+      "name": "Model Chat",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{GROQ_BASE_URL}}/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1756146278646,
+              "key": "Authorization",
+              "value": "Bearer {{GROQ_API_KEY}}",
+              "isEnabled": true
+            },
+            {
+              "id": 1756146293274,
+              "key": "Content-Type",
+              "value": "application/json",
+              "isEnabled": true
+            }
+          ],
+          "body": "{}",
+          "bodyContainer": {
+            "text": "{\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Explain the importance of low-latency AI inference.\"\n    }\n  ],\n  \"model\": \"{{GROQ_MODEL}}\",\n  \"temperature\": 0.5,\n  \"max_tokens\": 1024\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,445 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open AI /",
+      "collectionId": "",
+      "name": "Open AI ",
+      "description": "# OpenAI API Collection\n\n## Authentication\n- **Type:** Bearer Token\n- **Header:** `Authorization: Bearer {{OPENAI_API_KEY}}`\n\n## Documentation\n- **API Docs:** https://platform.openai.com/docs/api-reference\n- **Pricing:** https://openai.com/pricing\n- **Rate Limits:** Varies by model and tier\n\n## Getting Started\n1. Get API key from https://platform.openai.com/api-keys\n2. Set `OPENAI_API_KEY` variable\n3. Test with \"List Models\" request first\n",
+      "deleted": false,
+      "type": "collection",
+      "data": {
+        "variables": {
+          "OPENAI_API_KEY": {
+            "id": 0,
+            "type": "string",
+            "syncValue": "your-api-key"
+          },
+          "OPENAI_BASE_URL": {
+            "id": 1,
+            "type": "string",
+            "syncValue": "https://api.openai.com/v1"
+          },
+          "OPENAI_MODEL": {
+            "id": 2,
+            "type": "string",
+            "syncValue": "gpt-3.5-turbo"
+          },
+          "OPENAI_TTS_MODEL": {
+            "id": 3,
+            "type": "string",
+            "syncValue": "tts-1"
+          },
+          "OPENAI_STT_MODEL": {
+            "id": 4,
+            "type": "string",
+            "syncValue": "whisper-1"
+          },
+          "OPENAI_IMAGE_MODEL": {
+            "id": 5,
+            "type": "string",
+            "syncValue": "dall-e-3"
+          }
+        },
+        "auth": {}
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open AI /6e519c91-29c0-4963-aa04-907e92e4464d.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open AI /",
+      "name": "Chat Completion",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{OPENAI_BASE_URL}}/chat/completions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1756127471084,
+              "key": "Authorization",
+              "value": "Bearer {{OPENAI_API_KEY}}",
+              "isEnabled": true
+            },
+            {
+              "id": 1756127485441,
+              "key": "Content-Type",
+              "value": "application/json",
+              "isEnabled": true
+            }
+          ],
+          "body": "{\n  \"model\": \"{{OPENAI_MODEL}}\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful assistant.\"\n    },\n    {\n      \"role\": \"user\", \n      \"content\": \"Explain quantum computing in simple terms\"\n    }\n  ],\n  \"max_tokens\": 500,\n  \"temperature\": 0.7\n}",
+          "bodyContainer": {
+            "text": "{\n  \"model\": \"{{OPENAI_MODEL}}\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful assistant.\"\n    },\n    {\n      \"role\": \"user\", \n      \"content\": \"Explain quantum computing in simple terms\"\n    }\n  ],\n  \"max_tokens\": 500,\n  \"temperature\": 0.7\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open AI /a7bdaa64-bae2-4306-b66d-cc52be288b74.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open AI /",
+      "name": "Edit Image",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{OPENAI_BASE_URL}}/images/edits",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1756127986756,
+              "key": "Authorization",
+              "value": "Bearer {{OPENAI_API_KEY}}",
+              "isEnabled": true
+            }
+          ],
+          "body": [
+            {
+              "id": 1756128097431,
+              "key": "Image",
+              "value": [],
+              "isEnabled": true,
+              "type": "file"
+            },
+            {
+              "id": 1756128208424,
+              "key": "Prompt",
+              "value": "\"Add a rainbow to the sky\"",
+              "isEnabled": true,
+              "type": "text"
+            }
+          ],
+          "bodyContainer": {
+            "text": "",
+            "form": [],
+            "multipartForm": [
+              {
+                "id": 1756128097431,
+                "key": "Image",
+                "value": [],
+                "isEnabled": true,
+                "type": "file"
+              },
+              {
+                "id": 1756128208424,
+                "key": "Prompt",
+                "value": "\"Add a rainbow to the sky\"",
+                "isEnabled": true,
+                "type": "text"
+              }
+            ]
+          },
+          "contentType": "multipart/form-data"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open AI /9d01972b-eabe-4e84-9fc0-081f8dd5043d.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open AI /",
+      "name": "Generate Image",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{OPENAI_BASE_URL}}/images/generations",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1756127639523,
+              "key": "Authorization",
+              "value": "Bearer {{OPENAI_API_KEY}}",
+              "isEnabled": true
+            },
+            {
+              "id": 1756127654279,
+              "key": "Content-Type",
+              "value": "application/json",
+              "isEnabled": true
+            }
+          ],
+          "body": "{}",
+          "bodyContainer": {
+            "text": "{\n  \"model\": \"{{OPENAI_IMAGE_MODEL}}\",\n  \"prompt\": \"A serene landscape with mountains and lakes at sunset\",\n  \"n\": 1,\n  \"size\": \"1024x1024\",\n  \"quality\": \"standard\"\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open AI /e08694ca-0d13-4e43-b604-53f2565dedfd.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open AI /",
+      "name": "Image Variation",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{OPENAI_BASE_URL}}/images/variations",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1756128333027,
+              "key": "Authorization",
+              "value": "Bearer {{OPENAI_API_KEY}}",
+              "isEnabled": true
+            }
+          ],
+          "body": [
+            {
+              "id": 1756128330982,
+              "key": "Image",
+              "value": [],
+              "isEnabled": true,
+              "type": "file"
+            }
+          ],
+          "bodyContainer": {
+            "text": "",
+            "form": [],
+            "multipartForm": [
+              {
+                "id": 1756128330982,
+                "key": "Image",
+                "value": [],
+                "isEnabled": true,
+                "type": "file"
+              }
+            ]
+          },
+          "contentType": "multipart/form-data"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open AI /67cba734-652a-4c65-ac5a-7bb159e710c0.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open AI /",
+      "name": "List Models",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{OPENAI_BASE_URL}}/models",
+          "queryParams": [],
+          "method": "GET",
+          "headers": [],
+          "body": null,
+          "contentType": "text/plain"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open AI /76dea9f0-3dd0-4be8-84f7-07a50164a621.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open AI /",
+      "name": "Retrieve Model",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{OPENAI_BASE_URL}}/models/{{OPENAI_MODEL}}",
+          "queryParams": [],
+          "method": "GET",
+          "headers": [
+            {
+              "id": 1756127415074,
+              "key": "Authorization",
+              "value": "Bearer {{OPENAI_API_KEY}}",
+              "isEnabled": true
+            }
+          ],
+          "body": null,
+          "contentType": "text/plain"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open AI /d95b5ef3-1a08-4057-9c6f-711c22665bfe.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open AI /",
+      "name": "Speech to text (audio)",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{OPENAI_BASE_URL}}/audio/transcriptions",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1756128683367,
+              "key": "Authorization",
+              "value": "Bearer {{OPENAI_API_KEY}}",
+              "isEnabled": true
+            }
+          ],
+          "body": [
+            {
+              "id": 1756128695085,
+              "key": "Audio File",
+              "value": [],
+              "isEnabled": true,
+              "type": "file"
+            },
+            {
+              "id": 1756128700704,
+              "key": "Model",
+              "value": "{{OPENAI_STT_MODEL}}",
+              "isEnabled": true,
+              "type": "text"
+            }
+          ],
+          "bodyContainer": {
+            "text": "",
+            "form": [],
+            "multipartForm": [
+              {
+                "id": 1756128695085,
+                "key": "Audio File",
+                "value": [],
+                "isEnabled": true,
+                "type": "file"
+              },
+              {
+                "id": 1756128700704,
+                "key": "Model",
+                "value": "{{OPENAI_STT_MODEL}}",
+                "isEnabled": true,
+                "type": "text"
+              }
+            ]
+          },
+          "contentType": "multipart/form-data"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    },
+    {
+      "id": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open AI /d98fe3c0-2580-428f-a229-d046ea43f3a2.json",
+      "collectionId": "/Users/ronakkadhi/Documents/Awesome AI APIs/Open AI /",
+      "name": "Text To Speech",
+      "deleted": false,
+      "type": "api",
+      "data": {
+        "type": "http",
+        "request": {
+          "url": "{{OPENAI_BASE_URL}}/audio/speech",
+          "queryParams": [],
+          "method": "POST",
+          "headers": [
+            {
+              "id": 1756130833051,
+              "key": "Authorization",
+              "value": "Bearer {{OPENAI_API_KEY}}",
+              "isEnabled": true
+            },
+            {
+              "id": 1756130866922,
+              "key": "Content-Type",
+              "value": "application/json",
+              "isEnabled": true
+            }
+          ],
+          "body": "{\n  \"model\": \"{{OPENAI_TTS_MODEL}}\",\n  \"input\": \"Hello! This is a test of text to speech conversion.\",\n  \"voice\": \"alloy\",\n  \"response_format\": \"mp3\"\n}",
+          "bodyContainer": {
+            "text": "{\n  \"model\": \"{{OPENAI_TTS_MODEL}}\",\n  \"input\": \"Hello! This is a test of text to speech conversion.\",\n  \"voice\": \"alloy\",\n  \"response_format\": \"mp3\"\n}",
+            "form": [],
+            "multipartForm": []
+          },
+          "contentType": "application/json"
+        },
+        "scripts": {
+          "preRequest": "",
+          "postResponse": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "testResults": []
+      }
+    }
+  ]
+}
