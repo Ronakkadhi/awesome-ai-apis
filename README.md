@@ -36,7 +36,7 @@ Skip the API documentation hunt. This repo provides:
       - Modify parameters as needed.
       - Test different AI services instantly.
 
-Access All 21 APIs here
+### Access All 21 APIs here
 
 | Name | Provider | Type | Use Cases | Docs / Website | Requestly JSON |
 | :--- | :--- | :--- | :--- | :--- | :--- |
