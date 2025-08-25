@@ -39,7 +39,7 @@ Skip the API documentation hunt. This repo provides:
 ### Access All 21 APIs here
 
 | Name | Provider | Type | Docs / Website | Requestly JSON |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | 
 | OpenAI (Chat Completions) | OpenAI | Text/Chat LLM | [Docs](https://platform.openai.com/docs/api-reference/chat) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
 | OpenAI Images (DALL·E) | OpenAI | Image Generation | [Docs](https://platform.openai.com/docs/api-reference/images) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
 | OpenAI Audio (Speech-to-Text) | OpenAI | Speech-to-Text | [Docs](https://platform.openai.com/docs/api-reference/audio) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
