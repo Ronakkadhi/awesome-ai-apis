@@ -39,7 +39,7 @@ Skip the API documentation hunt. This repo provides:
 ### 📋 All AI APIs
 This collection is organized by provider. Each JSON file contains a full suite of APIs for that provider, including chat, image generation, and more.
 
-<details>
+<details> Click to expand </summary>
 
   <summary> 
 | Name | Provider | Type | Use Cases | Docs / Website | Requestly JSON |
@@ -65,7 +65,7 @@ This collection is organized by provider. Each JSON file contains a full suite o
 | AssemblyAI Summarize | AssemblyAI | Summary from audio | Speech (STT / TTS / Voice) | [Docs](https://www.assemblyai.com/docs/api-reference) | *Coming Soon* |
 | AssemblyAI (STT) | AssemblyAI | Speech-to-Text | Speech (STT / TTS / Voice) | [Docs](https://www.assemblyai.com/docs/api-reference) | *Coming Soon* |
 
-</summary>
+
 </details>
 
 
