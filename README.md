@@ -41,7 +41,7 @@ This collection is organized by provider. Each JSON file contains a full suite o
 
 <details>
 
-  <summary>Click to expand</summary>
+  <summary> 
 | Name | Provider | Type | Use Cases | Docs / Website | Requestly JSON |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | OpenAI (Chat Completions) | OpenAI | Text/Chat LLM | General-purpose conversation, Q&A, reasoning | [Docs](https://platform.openai.com/docs/api-reference/chat) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
@@ -65,6 +65,7 @@ This collection is organized by provider. Each JSON file contains a full suite o
 | AssemblyAI Summarize | AssemblyAI | Summary from audio | Speech (STT / TTS / Voice) | [Docs](https://www.assemblyai.com/docs/api-reference) | *Coming Soon* |
 | AssemblyAI (STT) | AssemblyAI | Speech-to-Text | Speech (STT / TTS / Voice) | [Docs](https://www.assemblyai.com/docs/api-reference) | *Coming Soon* |
 
+</summary>
 </details>
 
 
