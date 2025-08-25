@@ -38,28 +38,28 @@ Skip the API documentation hunt. This repo provides:
 
 ### Access All 21 APIs here
 
-| Name | Provider | Type | Use Cases | Docs / Website | Requestly JSON |
+| Name | Provider | Type | Docs / Website | Requestly JSON |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| OpenAI (Chat Completions) | OpenAI | Text/Chat LLM | General-purpose conversation, Q&A, reasoning | [Docs](https://platform.openai.com/docs/api-reference/chat) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
-| OpenAI Images (DALL·E) | OpenAI | Image Generation | Image Generation | [Docs](https://platform.openai.com/docs/api-reference/images) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
-| OpenAI Audio (Speech-to-Text) | OpenAI | Speech-to-Text | Speech (STT / TTS / Voice) | [Docs](https://platform.openai.com/docs/api-reference/audio) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
-| OpenAI Audio (Text-to-Speech) | OpenAI | Text-to-Speech | Speech (STT / TTS / Voice) | [Docs](https://platform.openai.com/docs/api-reference/audio) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
-| OpenAI (GPT-3.5 family) | OpenAI | Multimodal Chat | Multimodal (Text + Image + More) | [Docs](https://platform.openai.com/docs/models/gpt-4o) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
-| OpenAI Image Edits | OpenAI | Image Edit | Image Generation | [Docs](https://platform.openai.com/docs/api-reference/images/createEdit) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
-| OpenAI Image Variations | OpenAI | Image Variation | Image Generation | [Docs](https://platform.openai.com/docs/api-reference/images/createVariation) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
-| Anthropic (Claude Messages) | Anthropic | Text/Chat LLM | General-purpose conversation, Q&A, reasoning | [Docs](https://docs.anthropic.com/en/api/messages) | [Claude.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/Claude.json) |
-| Google Gemini - Text generation | Gemini | Multimodal LLM | General-purpose conversation, Q&A, reasoning | [Docs](https://ai.google.dev/api/rest) | [Gemini.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/Gemini.json) |
-| Google Gemini (Vision) | Gemini | Multimodal Chat | Multimodal (Text + Image + More) | [Docs](https://ai.google.dev/gemini-api/docs/vision) | [Gemini.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/Gemini.json) |
-| Google Gemini - Speech generation | Gemini | Multimodal LLM | General-purpose conversation, Q&A, reasoning | [Docs](https://ai.google.dev/api/rest) | [Gemini.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/Gemini.json) |
-| OpenRouter (Router over many LLMs) | OpenRouter | Text/Chat LLM Router | Aggregator | [Docs](https://openrouter.ai/docs) | [OpenRouter.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenRouter.json) |
-| OpenAI GPT oss 120b | OpenRouter | Text Generation | Aggregator | [Docs](https://openrouter.ai/docs) | [OpenRouter.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenRouter.json) |
-| OpenAI GPT oss 20b | OpenRouter | Text Generation | Aggregator | [Docs](https://openrouter.ai/docs) | [OpenRouter.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenRouter.json) |
-| Groq (OpenAI-compatible) | Groq | Text/Chat LLM | General-purpose conversation, Q&A, reasoning | [Docs](https://console.groq.com/docs/quickstart) | [Groq.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/Groq.json) |
-| Meta-llama/Llama-3.1-8B-Instruct | Groq | Text/Chat LLM | General-purpose conversation, Q&A, reasoning | [Docs](https://groq.com/docs/api-reference/models) | [Groq.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/Groq.json) |
-| Mistral (Chat Completions) | Mistral | Text/Chat LLM | General-purpose conversation, Q&A, reasoning | [Docs](https://docs.mistral.ai/api/) | *Coming Soon* |
-| ElevenLabs V3 | ElevenLabs | Text-to-Speech | Speech (STT / TTS / Voice) | [Docs](https://elevenlabs.io/docs/api-reference) | *Coming Soon* |
-| AssemblyAI Summarize | AssemblyAI | Summary from audio | Speech (STT / TTS / Voice) | [Docs](https://www.assemblyai.com/docs/api-reference) | *Coming Soon* |
-| AssemblyAI (STT) | AssemblyAI | Speech-to-Text | Speech (STT / TTS / Voice) | [Docs](https://www.assemblyai.com/docs/api-reference) | *Coming Soon* |
+| OpenAI (Chat Completions) | OpenAI | Text/Chat LLM | [Docs](https://platform.openai.com/docs/api-reference/chat) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
+| OpenAI Images (DALL·E) | OpenAI | Image Generation | [Docs](https://platform.openai.com/docs/api-reference/images) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
+| OpenAI Audio (Speech-to-Text) | OpenAI | Speech-to-Text | [Docs](https://platform.openai.com/docs/api-reference/audio) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
+| OpenAI Audio (Text-to-Speech) | OpenAI | Text-to-Speech | [Docs](https://platform.openai.com/docs/api-reference/audio) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
+| OpenAI (GPT-3.5 family) | OpenAI | Multimodal Chat | [Docs](https://platform.openai.com/docs/models/gpt-4o) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
+| OpenAI Image Edits | OpenAI | Image Edit | [Docs](https://platform.openai.com/docs/api-reference/images/createEdit) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
+| OpenAI Image Variations | OpenAI | Image Variation | [Docs](https://platform.openai.com/docs/api-reference/images/createVariation) | [OpenAI.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenAI.json) |
+| Anthropic (Claude Messages) | Anthropic | Text/Chat LLM | [Docs](https://docs.anthropic.com/en/api/messages) | [Claude.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/Claude.json) |
+| Google Gemini - Text generation | Gemini | Multimodal LLM | [Docs](https://ai.google.dev/api/rest) | [Gemini.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/Gemini.json) |
+| Google Gemini (Vision) | Gemini | Multimodal Chat | [Docs](https://ai.google.dev/gemini-api/docs/vision) | [Gemini.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/Gemini.json) |
+| Google Gemini - Speech generation | Gemini | Multimodal LLM | [Docs](https://ai.google.dev/api/rest) | [Gemini.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/Gemini.json) |
+| OpenRouter (Router over many LLMs) | OpenRouter | Aggregator | [Docs](https://openrouter.ai/docs) | [OpenRouter.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenRouter.json) |
+| OpenAI GPT oss 120b | OpenRouter | Text Generation | [Docs](https://openrouter.ai/docs) | [OpenRouter.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenRouter.json) |
+| OpenAI GPT oss 20b | OpenRouter | Text Generation | [Docs](https://openrouter.ai/docs) | [OpenRouter.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/OpenRouter.json) |
+| Groq (OpenAI-compatible) | Groq | Text/Chat LLM | [Docs](https://console.groq.com/docs/quickstart) | [Groq.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/Groq.json) |
+| Meta-llama/Llama-3.1-8B-Instruct | Groq | Text/Chat LLM | [Docs](https://groq.com/docs/api-reference/models) | [Groq.json](https://github.com/Ronakkadhi/awesome-ai-apis/blob/main/Groq.json) |
+| Mistral (Chat Completions) | Mistral | Text/Chat LLM | [Docs](https://docs.mistral.ai/api/) | *Coming Soon* |
+| ElevenLabs V3 | ElevenLabs | Text-to-Speech | [Docs](https://elevenlabs.io/docs/api-reference) | *Coming Soon* |
+| AssemblyAI Summarize | AssemblyAI | Summary from audio | [Docs](https://www.assemblyai.com/docs/api-reference) | *Coming Soon* |
+| AssemblyAI (STT) | AssemblyAI | Speech-to-Text | [Docs](https://www.assemblyai.com/docs/api-reference) | *Coming Soon* |
 
 
 ### ⚠️ Important Notes
