@@ -8,15 +8,15 @@
       "postResponse": ""
     },
     "method": "GET",
-    "queryParams": [
+    "queryParams": [],
+    "headers": [
       {
-        "id": 0.5418451100785238,
-        "key": "key",
+        "id": 1756213261818,
+        "key": "API-KEY",
         "value": "{{GEMINI_API_KEY}}",
         "isEnabled": true
       }
     ],
-    "headers": [],
     "body": null,
     "contentType": "text/plain",
     "auth": {

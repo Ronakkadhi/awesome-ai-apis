@@ -12,7 +12,7 @@
     "isSecret": false
   },
   "OPENAI_MODEL": {
-    "value": "GPT-3.5-TURBO",
+    "value": "gpt-4o-mini",
     "type": "string",
     "id": 2,
     "isSecret": false

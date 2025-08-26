@@ -12,7 +12,7 @@
     "isSecret": false
   },
   "ANTHROPIC_MODEL": {
-    "value": "CLAUDE-3.5-SONNET_20241022",
+    "value": "claude-3-5-sonnet-20241022",
     "type": "string",
     "id": 2,
     "isSecret": false

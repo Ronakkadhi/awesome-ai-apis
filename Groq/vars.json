@@ -1,0 +1,14 @@
+{
+  "GROQ_API_KEY": {
+    "value": "YOUR_API_KEY",
+    "type": "string",
+    "id": 0,
+    "isSecret": false
+  },
+  "GROQ_BASE_URL": {
+    "value": "https://api.groq.com/openai/v1",
+    "type": "string",
+    "id": 1,
+    "isSecret": false
+  }
+}

@@ -24,9 +24,9 @@
         "isEnabled": true
       }
     ],
-    "body": "{\n  \"contents\": [\n    {\n      \"parts\": [\n        {\n          \"text\": \"Analyze this image and provide a detailed description\"\n        },\n        {\n          \"inline_data\": \n          \"mime_type\": \"image/png\",\n          \"data\": \"iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mP8/5+hnoEIwDiqkL4KAcT9GO4CCEyuAAAAAElFTkSuQmCC\"\n        }\n      ]\n    }\n  ]\n}",
+    "body": "{\n  \"contents\": [\n    {\n      \"parts\": [\n        {\n          \"text\": \"Analyze this image and provide a detailed description\"\n        },\n        {\n          \"inline_data\": {\n          \"mime_type\": \"image/png\",\n          \"data\": \"iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mP8/5+hnoEIwDiqkL4KAcT9GO4CCEyuAAAAAElFTkSuQmCC\"}\n        }\n      ]\n    }\n  ]\n}",
     "bodyContainer": {
-      "text": "{\n  \"contents\": [\n    {\n      \"parts\": [\n        {\n          \"text\": \"Analyze this image and provide a detailed description\"\n        },\n        {\n          \"inline_data\": \n          \"mime_type\": \"image/png\",\n          \"data\": \"iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mP8/5+hnoEIwDiqkL4KAcT9GO4CCEyuAAAAAElFTkSuQmCC\"\n        }\n      ]\n    }\n  ]\n}",
+      "text": "{\n  \"contents\": [\n    {\n      \"parts\": [\n        {\n          \"text\": \"Analyze this image and provide a detailed description\"\n        },\n        {\n          \"inline_data\": {\n          \"mime_type\": \"image/png\",\n          \"data\": \"iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mP8/5+hnoEIwDiqkL4KAcT9GO4CCEyuAAAAAElFTkSuQmCC\"}\n        }\n      ]\n    }\n  ]\n}",
       "form": [],
       "multipartForm": []
     },

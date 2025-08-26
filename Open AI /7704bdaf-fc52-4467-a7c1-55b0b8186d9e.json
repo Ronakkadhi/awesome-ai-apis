@@ -20,14 +20,14 @@
     "body": [
       {
         "id": 1756128097431,
-        "key": "Image",
+        "key": "image",
         "value": [],
         "isEnabled": true,
         "type": "file"
       },
       {
         "id": 1756128208424,
-        "key": "Prompt",
+        "key": "prompt",
         "value": "\"Add a rainbow to the sky\"",
         "isEnabled": true,
         "type": "text"
@@ -39,14 +39,14 @@
       "multipartForm": [
         {
           "id": 1756128097431,
-          "key": "Image",
+          "key": "image",
           "value": [],
           "isEnabled": true,
           "type": "file"
         },
         {
           "id": 1756128208424,
-          "key": "Prompt",
+          "key": "prompt",
           "value": "\"Add a rainbow to the sky\"",
           "isEnabled": true,
           "type": "text"

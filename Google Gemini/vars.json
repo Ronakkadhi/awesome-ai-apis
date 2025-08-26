@@ -12,13 +12,13 @@
     "isSecret": false
   },
   "GEMINI_MODEL": {
-    "value": "GEMINI-1.5-FLASH",
+    "value": "gemini-1.5-flash",
     "type": "string",
     "id": 2,
     "isSecret": false
   },
   "GEMINI_VISION_MODEL": {
-    "value": "GEMINI-1.5-PRO-VISION-LATEST",
+    "value": "gemini-1.5-pro",
     "type": "string",
     "id": 3,
     "isSecret": false

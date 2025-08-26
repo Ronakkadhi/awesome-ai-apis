@@ -20,14 +20,14 @@
     "body": [
       {
         "id": 1756128695085,
-        "key": "Audio File",
+        "key": "file",
         "value": [],
         "isEnabled": true,
         "type": "file"
       },
       {
         "id": 1756128700704,
-        "key": "Model",
+        "key": "model",
         "value": "{{OPENAI_STT_MODEL}}",
         "isEnabled": true,
         "type": "text"
@@ -39,14 +39,14 @@
       "multipartForm": [
         {
           "id": 1756128695085,
-          "key": "Audio File",
+          "key": "file",
           "value": [],
           "isEnabled": true,
           "type": "file"
         },
         {
           "id": 1756128700704,
-          "key": "Model",
+          "key": "model",
           "value": "{{OPENAI_STT_MODEL}}",
           "isEnabled": true,
           "type": "text"

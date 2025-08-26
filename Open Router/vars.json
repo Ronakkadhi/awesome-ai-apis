@@ -29,10 +29,16 @@
     "id": 4,
     "isSecret": false
   },
-  "{{OPENROUTER_APP_NAME}}": {
-    "value": "Your App name",
+  "OPENROUTER_APP_NAME": {
+    "value": "YOUR_APP_NAME",
     "type": "string",
     "id": 5,
+    "isSecret": false
+  },
+  "OPENROUTER_FREE_MODEL": {
+    "value": "meta-llama/llama-3.1-8b-instruct:free",
+    "type": "string",
+    "id": 6,
     "isSecret": false
   }
 }

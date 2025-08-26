@@ -8,19 +8,18 @@
       "postResponse": ""
     },
     "method": "POST",
-    "queryParams": [
-      {
-        "id": 0.7357009925236859,
-        "key": "key",
-        "value": "{{GEMINI_API_KEY}}",
-        "isEnabled": true
-      }
-    ],
+    "queryParams": [],
     "headers": [
       {
         "id": 1756135843275,
         "key": "Content-Type",
         "value": "application/json",
+        "isEnabled": true
+      },
+      {
+        "id": 1756213357719,
+        "key": "Key",
+        "value": "{{GEMINI_API_KEY}}",
         "isEnabled": true
       }
     ],
