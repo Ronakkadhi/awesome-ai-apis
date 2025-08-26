@@ -14,10 +14,10 @@ Skip the API documentation hunt. This repo provides:
 
 ### 🚀 Quick Start
 
-1.  **Download the JSON file(s)**
+1.  **Clone the Repository**
 
-      - Choose a provider from the table below and download its corresponding JSON file.
-
+      - Clone the repository to your local machine to get all the Requestly JSON files: git clone https://github.com/Ronakkadhi/awesome-ai-apis.git
+  
 2.  **Import to Requestly**
 
       - Open the [Requestly Desktop App](https://requestly.io/desktop/).
