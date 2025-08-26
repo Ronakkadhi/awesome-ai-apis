@@ -1,0 +1,38 @@
+{
+  "name": "Chat",
+  "request": {
+    "type": "http",
+    "url": "{{ANTHROPIC_BASE_URL}}/v1/messages",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756140623338,
+        "key": "x-api-key",
+        "value": " {{ANTHROPIC_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1756140723697,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"model\": \"{{ANTHROPIC_MODEL}}\",\n  \"max_tokens\": 1000,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Explain quantum computing in simple terms\"\n    }\n  ]\n}",
+    "bodyContainer": {
+      "text": "{\n  \"model\": \"{{ANTHROPIC_MODEL}}\",\n  \"max_tokens\": 1000,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Explain quantum computing in simple terms\"\n    }\n  ]\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

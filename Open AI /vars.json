@@ -1,0 +1,38 @@
+{
+  "OPENAI_API_KEY": {
+    "value": "your-api-key",
+    "type": "string",
+    "id": 0,
+    "isSecret": false
+  },
+  "OPENAI_BASE_URL": {
+    "value": "https://api.openai.com/v1",
+    "type": "string",
+    "id": 1,
+    "isSecret": false
+  },
+  "OPENAI_MODEL": {
+    "value": "gpt-3.5-turbo",
+    "type": "string",
+    "id": 2,
+    "isSecret": false
+  },
+  "OPENAI_TTS_MODEL": {
+    "value": "tts-1",
+    "type": "string",
+    "id": 3,
+    "isSecret": false
+  },
+  "OPENAI_STT_MODEL": {
+    "value": "whisper-1",
+    "type": "string",
+    "id": 4,
+    "isSecret": false
+  },
+  "OPENAI_IMAGE_MODEL": {
+    "value": "dall-e-3",
+    "type": "string",
+    "id": 5,
+    "isSecret": false
+  }
+}

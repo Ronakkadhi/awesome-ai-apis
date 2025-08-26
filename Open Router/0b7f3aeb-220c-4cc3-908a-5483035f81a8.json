@@ -1,0 +1,32 @@
+{
+  "name": "Open AI OSS 120B ",
+  "request": {
+    "type": "http",
+    "url": "{{OPENROUTER_BASE_URL}}/chat/completions",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756139501315,
+        "key": "Authorization",
+        "value": "Bearer {{OPENROUTER_API_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"model\": \"{{GPT_OSS_120B}}\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful AI assistant.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Explain the difference between GPT-3.5 and GPT-4 in simple terms\"\n    }\n  ],\n  \"max_tokens\": 300,\n  \"temperature\": 0.7\n}",
+    "bodyContainer": {
+      "text": "{\n  \"model\": \"{{GPT_OSS_120B}}\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful AI assistant.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Explain the difference between GPT-3.5 and GPT-4 in simple terms\"\n    }\n  ],\n  \"max_tokens\": 300,\n  \"temperature\": 0.7\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

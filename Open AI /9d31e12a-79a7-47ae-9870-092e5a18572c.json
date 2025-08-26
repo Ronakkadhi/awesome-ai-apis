@@ -1,0 +1,38 @@
+{
+  "name": "Chat Completion",
+  "request": {
+    "type": "http",
+    "url": "{{OPENAI_BASE_URL}}/chat/completions",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756127471084,
+        "key": "Authorization",
+        "value": "Bearer {{OPENAI_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1756127485441,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"model\": \"{{OPENAI_MODEL}}\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful assistant.\"\n    },\n    {\n      \"role\": \"user\", \n      \"content\": \"Explain quantum computing in simple terms\"\n    }\n  ],\n  \"max_tokens\": 500,\n  \"temperature\": 0.7\n}",
+    "bodyContainer": {
+      "text": "{\n  \"model\": \"{{OPENAI_MODEL}}\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful assistant.\"\n    },\n    {\n      \"role\": \"user\", \n      \"content\": \"Explain quantum computing in simple terms\"\n    }\n  ],\n  \"max_tokens\": 500,\n  \"temperature\": 0.7\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

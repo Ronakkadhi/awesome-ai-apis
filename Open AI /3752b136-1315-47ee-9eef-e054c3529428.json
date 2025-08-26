@@ -1,0 +1,20 @@
+{
+  "name": "List Models",
+  "request": {
+    "type": "http",
+    "url": "{{OPENAI_BASE_URL}}/models",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

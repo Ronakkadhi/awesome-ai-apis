@@ -1,0 +1,44 @@
+{
+  "name": "Model Comparison Test",
+  "request": {
+    "type": "http",
+    "url": "{{OPENROUTER_BASE_URL}}/chat/completions",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756139767653,
+        "key": "Authorization",
+        "value": "Bearer {{OPENROUTER_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1756141080121,
+        "key": "HTTP-Referer",
+        "value": "{{OPENROUTER_SITE_URL}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1756141107460,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"model\": \"meta-llama/llama-3.1-8b-instruct:free\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"What are the advantages of using OpenRouter vs direct API calls?\"\n    }\n  ],\n  \"max_tokens\": 250\n}",
+    "bodyContainer": {
+      "text": "{\n  \"model\": \"meta-llama/llama-3.1-8b-instruct:free\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"What are the advantages of using OpenRouter vs direct API calls?\"\n    }\n  ],\n  \"max_tokens\": 250\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Speech Generation",
+  "request": {
+    "type": "http",
+    "url": "{{GEMINI_BASE_URL}}/models/{{GEMINI_MODEL}}:generateContent",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [
+      {
+        "id": 0.3164533761402708,
+        "key": "key",
+        "value": "{{GEMINI_API_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "headers": [
+      {
+        "id": 1756137177502,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"contents\": [\n    {\n      \"parts\": [\n        {\n          \"text\": \"Generate a short speech about artificial intelligence\"\n        }\n      ]\n    }\n  ],\n  \"generationConfig\": {\n    \"maxOutputTokens\": 500,\n    \"temperature\": 0.8\n  }\n}",
+    "bodyContainer": {
+      "text": "{\n  \"contents\": [\n    {\n      \"parts\": [\n        {\n          \"text\": \"Generate a short speech about artificial intelligence\"\n        }\n      ]\n    }\n  ],\n  \"generationConfig\": {\n    \"maxOutputTokens\": 500,\n    \"temperature\": 0.8\n  }\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

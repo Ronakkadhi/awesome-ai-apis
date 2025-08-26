@@ -1,0 +1,48 @@
+{
+  "name": "Image Variation",
+  "request": {
+    "type": "http",
+    "url": "{{OPENAI_BASE_URL}}/images/variations",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756128333027,
+        "key": "Authorization",
+        "value": "Bearer {{OPENAI_API_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "body": [
+      {
+        "id": 1756128330982,
+        "key": "Image",
+        "value": [],
+        "isEnabled": true,
+        "type": "file"
+      }
+    ],
+    "bodyContainer": {
+      "text": "",
+      "form": [],
+      "multipartForm": [
+        {
+          "id": 1756128330982,
+          "key": "Image",
+          "value": [],
+          "isEnabled": true,
+          "type": "file"
+        }
+      ]
+    },
+    "contentType": "multipart/form-data",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

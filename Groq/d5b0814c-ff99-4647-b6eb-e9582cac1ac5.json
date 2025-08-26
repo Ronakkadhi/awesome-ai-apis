@@ -1,0 +1,38 @@
+{
+  "name": "Model Chat",
+  "request": {
+    "type": "http",
+    "url": "{{GROQ_BASE_URL}}/chat/completions",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756146278646,
+        "key": "Authorization",
+        "value": "Bearer {{GROQ_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1756146293274,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{}",
+    "bodyContainer": {
+      "text": "{\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Explain the importance of low-latency AI inference.\"\n    }\n  ],\n  \"model\": \"{{GROQ_MODEL}}\",\n  \"temperature\": 0.5,\n  \"max_tokens\": 1024\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

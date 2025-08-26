@@ -1,0 +1,33 @@
+{
+  "name": "List Models",
+  "request": {
+    "type": "http",
+    "url": "{{GROQ_BASE_URL}}/models",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756146114810,
+        "key": "Authorization",
+        "value": "Bearer {{GROQ_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1756146132566,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

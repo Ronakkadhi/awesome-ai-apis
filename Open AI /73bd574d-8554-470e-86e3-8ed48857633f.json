@@ -1,0 +1,38 @@
+{
+  "name": "Generate Image",
+  "request": {
+    "type": "http",
+    "url": "{{OPENAI_BASE_URL}}/images/generations",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756127639523,
+        "key": "Authorization",
+        "value": "Bearer {{OPENAI_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1756127654279,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{}",
+    "bodyContainer": {
+      "text": "{\n  \"model\": \"{{OPENAI_IMAGE_MODEL}}\",\n  \"prompt\": \"A serene landscape with mountains and lakes at sunset\",\n  \"n\": 1,\n  \"size\": \"1024x1024\",\n  \"quality\": \"standard\"\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

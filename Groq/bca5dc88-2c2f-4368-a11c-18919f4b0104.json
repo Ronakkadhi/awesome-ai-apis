@@ -1,0 +1,38 @@
+{
+  "name": "Meta-Llama 3.1 8B ",
+  "request": {
+    "type": "http",
+    "url": "{{GROQ_BASE_URL}}/chat/completions",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756146387051,
+        "key": "Authorization",
+        "value": "Bearer {{GROQ_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1756146415904,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Write a short story about an astronaut who finds a peculiar plant on a new planet.\"\n    }\n  ],\n  \"model\": \"llama-3.1-8b-instruct\",\n  \"temperature\": 0.7,\n  \"max_tokens\": 512\n}",
+    "bodyContainer": {
+      "text": "{\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Write a short story about an astronaut who finds a peculiar plant on a new planet.\"\n    }\n  ],\n  \"model\": \"llama-3.1-8b-instruct\",\n  \"temperature\": 0.7,\n  \"max_tokens\": 512\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

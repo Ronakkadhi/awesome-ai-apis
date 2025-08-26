@@ -1,0 +1,38 @@
+{
+  "OPENROUTER_API_KEY": {
+    "value": "your-api-key",
+    "type": "string",
+    "id": 0,
+    "isSecret": false
+  },
+  "OPENROUTER_BASE_URL": {
+    "value": "https://openrouter.ai/api/v1",
+    "type": "string",
+    "id": 1,
+    "isSecret": false
+  },
+  "OPENROUTER_SITE_URL": {
+    "value": "https://localhost:3000",
+    "type": "string",
+    "id": 2,
+    "isSecret": false
+  },
+  "GPT_OSS_120B": {
+    "value": "openai/gpt-oss-120b",
+    "type": "string",
+    "id": 3,
+    "isSecret": false
+  },
+  "GPT_OSS_20B": {
+    "value": "openai/gpt-oss-20b:free",
+    "type": "string",
+    "id": 4,
+    "isSecret": false
+  },
+  "{{OPENROUTER_APP_NAME}}": {
+    "value": "Your App name",
+    "type": "string",
+    "id": 5,
+    "isSecret": false
+  }
+}

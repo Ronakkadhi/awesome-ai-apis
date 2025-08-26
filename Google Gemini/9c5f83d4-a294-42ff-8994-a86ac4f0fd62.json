@@ -1,0 +1,39 @@
+{
+  "name": "Vision (Analyse Image)",
+  "request": {
+    "type": "http",
+    "url": "{{GEMINI_BASE_URL}}/models/{{GEMINI_VISION_MODEL}}:generateContent",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [
+      {
+        "id": 0.3949658651881549,
+        "key": "key",
+        "value": "{{GEMINI_API_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "headers": [
+      {
+        "id": 1756136773542,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"contents\": [\n    {\n      \"parts\": [\n        {\n          \"text\": \"Analyze this image and provide a detailed description\"\n        },\n        {\n          \"inline_data\": \n          \"mime_type\": \"image/png\",\n          \"data\": \"iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mP8/5+hnoEIwDiqkL4KAcT9GO4CCEyuAAAAAElFTkSuQmCC\"\n        }\n      ]\n    }\n  ]\n}",
+    "bodyContainer": {
+      "text": "{\n  \"contents\": [\n    {\n      \"parts\": [\n        {\n          \"text\": \"Analyze this image and provide a detailed description\"\n        },\n        {\n          \"inline_data\": \n          \"mime_type\": \"image/png\",\n          \"data\": \"iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mP8/5+hnoEIwDiqkL4KAcT9GO4CCEyuAAAAAElFTkSuQmCC\"\n        }\n      ]\n    }\n  ]\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

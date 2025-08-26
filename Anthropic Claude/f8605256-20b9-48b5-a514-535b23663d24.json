@@ -1,0 +1,27 @@
+{
+  "name": "List Models",
+  "request": {
+    "type": "http",
+    "url": "{{ANTHROPIC_BASE_URL}}/v1/models",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756134501579,
+        "key": "x-api-key",
+        "value": "{{ANTHROPIC_API_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "List Models",
+  "request": {
+    "type": "http",
+    "url": "{{GEMINI_BASE_URL}}/models",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [
+      {
+        "id": 0.5418451100785238,
+        "key": "key",
+        "value": "{{GEMINI_API_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "headers": [],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

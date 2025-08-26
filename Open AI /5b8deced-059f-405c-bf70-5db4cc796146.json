@@ -1,0 +1,38 @@
+{
+  "name": "Text To Speech",
+  "request": {
+    "type": "http",
+    "url": "{{OPENAI_BASE_URL}}/audio/speech",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756130833051,
+        "key": "Authorization",
+        "value": "Bearer {{OPENAI_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1756130866922,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"model\": \"{{OPENAI_TTS_MODEL}}\",\n  \"input\": \"Hello! This is a test of text to speech conversion.\",\n  \"voice\": \"alloy\",\n  \"response_format\": \"mp3\"\n}",
+    "bodyContainer": {
+      "text": "{\n  \"model\": \"{{OPENAI_TTS_MODEL}}\",\n  \"input\": \"Hello! This is a test of text to speech conversion.\",\n  \"voice\": \"alloy\",\n  \"response_format\": \"mp3\"\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

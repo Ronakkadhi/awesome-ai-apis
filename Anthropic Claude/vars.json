@@ -1,0 +1,20 @@
+{
+  "ANTHROPIC_API_KEY": {
+    "value": "your-api-key-here",
+    "type": "string",
+    "id": 0,
+    "isSecret": false
+  },
+  "ANTHROPIC_BASE_URL": {
+    "value": "https://api.anthropic.com",
+    "type": "string",
+    "id": 1,
+    "isSecret": false
+  },
+  "ANTHROPIC_MODEL": {
+    "value": "claude-3-5-sonnet-20241022",
+    "type": "string",
+    "id": 2,
+    "isSecret": false
+  }
+}

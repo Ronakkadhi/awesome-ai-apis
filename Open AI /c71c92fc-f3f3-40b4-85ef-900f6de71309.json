@@ -1,0 +1,62 @@
+{
+  "name": "Speech to text (audio)",
+  "request": {
+    "type": "http",
+    "url": "{{OPENAI_BASE_URL}}/audio/transcriptions",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756128683367,
+        "key": "Authorization",
+        "value": "Bearer {{OPENAI_API_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "body": [
+      {
+        "id": 1756128695085,
+        "key": "Audio File",
+        "value": [],
+        "isEnabled": true,
+        "type": "file"
+      },
+      {
+        "id": 1756128700704,
+        "key": "Model",
+        "value": "{{OPENAI_STT_MODEL}}",
+        "isEnabled": true,
+        "type": "text"
+      }
+    ],
+    "bodyContainer": {
+      "text": "",
+      "form": [],
+      "multipartForm": [
+        {
+          "id": 1756128695085,
+          "key": "Audio File",
+          "value": [],
+          "isEnabled": true,
+          "type": "file"
+        },
+        {
+          "id": 1756128700704,
+          "key": "Model",
+          "value": "{{OPENAI_STT_MODEL}}",
+          "isEnabled": true,
+          "type": "text"
+        }
+      ]
+    },
+    "contentType": "multipart/form-data",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

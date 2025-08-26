@@ -1,0 +1,26 @@
+{
+  "GEMINI_API_KEY": {
+    "value": "your-api-key-here",
+    "type": "string",
+    "id": 0,
+    "isSecret": false
+  },
+  "GEMINI_BASE_URL": {
+    "value": "https://generativelanguage.googleapis.com/v1",
+    "type": "string",
+    "id": 1,
+    "isSecret": false
+  },
+  "GEMINI_MODEL": {
+    "value": "gemini-1.5-flash",
+    "type": "string",
+    "id": 2,
+    "isSecret": false
+  },
+  "GEMINI_VISION_MODEL": {
+    "value": "gemini-1.5-pro-vision-latest",
+    "type": "string",
+    "id": 3,
+    "isSecret": false
+  }
+}

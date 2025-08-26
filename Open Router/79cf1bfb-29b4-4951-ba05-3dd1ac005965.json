@@ -1,0 +1,44 @@
+{
+  "name": "Free Models",
+  "request": {
+    "type": "http",
+    "url": "{{OPENROUTER_BASE_URL}}/chat/completions",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756139430184,
+        "key": "Authorization",
+        "value": "Bearer {{OPENROUTER_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1756139963780,
+        "key": "HTTP-Referer",
+        "value": "{{OPENROUTER_SITE_URL}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1756139987451,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"model\": \"{{OPENROUTER_FREE_MODEL}}\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Say hello and tell me your model name\"\n    }\n  ],\n  \"max_tokens\": 50\n}",
+    "bodyContainer": {
+      "text": "{\n  \"model\": \"{{OPENROUTER_FREE_MODEL}}\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Say hello and tell me your model name\"\n    }\n  ],\n  \"max_tokens\": 50\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

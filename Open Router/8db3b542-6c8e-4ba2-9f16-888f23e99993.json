@@ -1,0 +1,39 @@
+{
+  "name": "List Models",
+  "request": {
+    "type": "http",
+    "url": "{{OPENROUTER_BASE_URL}}/models",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756138496987,
+        "key": "Authorization",
+        "value": "Bearer {{OPENROUTER_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1756138508092,
+        "key": "HTTP-Referer",
+        "value": "{{OPENROUTER_SITE_URL}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1756138523584,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Retrieve Model",
+  "request": {
+    "type": "http",
+    "url": "{{OPENAI_BASE_URL}}/models/{{OPENAI_MODEL}}",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756127415074,
+        "key": "Authorization",
+        "value": "Bearer {{OPENAI_API_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

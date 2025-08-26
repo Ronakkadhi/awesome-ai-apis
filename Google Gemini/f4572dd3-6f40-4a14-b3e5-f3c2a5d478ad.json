@@ -1,0 +1,39 @@
+{
+  "name": "Text Generation",
+  "request": {
+    "type": "http",
+    "url": "{{GEMINI_BASE_URL}}/models/{{GEMINI_MODEL}}:generateContent",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [
+      {
+        "id": 0.8031157140286582,
+        "key": "key",
+        "value": "{{GEMINI_API_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "headers": [
+      {
+        "id": 1756135225021,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"contents\": [\n    {\n      \"parts\": [\n        {\n          \"text\": \"Explain quantum computing in simple terms\"\n        }\n      ]\n    }\n  ],\n  \"generationConfig\": {\n    \"maxOutputTokens\": 1000,\n    \"temperature\": 0.7\n  }\n}",
+    "bodyContainer": {
+      "text": "{\n  \"contents\": [\n    {\n      \"parts\": [\n        {\n          \"text\": \"Explain quantum computing in simple terms\"\n        }\n      ]\n    }\n  ],\n  \"generationConfig\": {\n    \"maxOutputTokens\": 1000,\n    \"temperature\": 0.7\n  }\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

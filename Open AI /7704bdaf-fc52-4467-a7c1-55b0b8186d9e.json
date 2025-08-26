@@ -1,0 +1,62 @@
+{
+  "name": "Edit Image",
+  "request": {
+    "type": "http",
+    "url": "{{OPENAI_BASE_URL}}/images/edits",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756127986756,
+        "key": "Authorization",
+        "value": "Bearer {{OPENAI_API_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "body": [
+      {
+        "id": 1756128097431,
+        "key": "Image",
+        "value": [],
+        "isEnabled": true,
+        "type": "file"
+      },
+      {
+        "id": 1756128208424,
+        "key": "Prompt",
+        "value": "\"Add a rainbow to the sky\"",
+        "isEnabled": true,
+        "type": "text"
+      }
+    ],
+    "bodyContainer": {
+      "text": "",
+      "form": [],
+      "multipartForm": [
+        {
+          "id": 1756128097431,
+          "key": "Image",
+          "value": [],
+          "isEnabled": true,
+          "type": "file"
+        },
+        {
+          "id": 1756128208424,
+          "key": "Prompt",
+          "value": "\"Add a rainbow to the sky\"",
+          "isEnabled": true,
+          "type": "text"
+        }
+      ]
+    },
+    "contentType": "multipart/form-data",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

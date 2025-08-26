@@ -1,0 +1,32 @@
+{
+  "name": "OpenAI OSS 20B",
+  "request": {
+    "type": "http",
+    "url": "{{OPENROUTER_BASE_URL}}/chat/completions",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756139573322,
+        "key": "Authorization",
+        "value": "Bearer {{OPENROUTER_API_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"model\": \"{{GPT_OSS_20B}}\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Write a short poem about artificial intelligence\"\n    }\n  ],\n  \"max_tokens\": 200,\n  \"temperature\": 0.8\n}",
+    "bodyContainer": {
+      "text": "{\n  \"model\": \"{{GPT_OSS_20B}}\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Write a short poem about artificial intelligence\"\n    }\n  ],\n  \"max_tokens\": 200,\n  \"temperature\": 0.8\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

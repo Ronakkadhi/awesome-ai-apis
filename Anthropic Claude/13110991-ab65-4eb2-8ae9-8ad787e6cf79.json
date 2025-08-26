@@ -1,0 +1,32 @@
+{
+  "name": "Multi-turn Chat",
+  "request": {
+    "type": "http",
+    "url": "{{ANTHROPIC_BASE_URL}}/v1/messages",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756143924633,
+        "key": "x-api-key",
+        "value": "{{ANTHROPIC_API_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "body": "{}",
+    "bodyContainer": {
+      "text": "{\n  \"model\": \"{{ANTHROPIC_MODEL}}\",\n  \"max_tokens\": 1000,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"What is the capital of France?\"\n    },\n    {\n      \"role\": \"assistant\",\n      \"content\": \"The capital of France is Paris.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"What's the population?\"\n    }\n  ]\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}
