@@ -16,7 +16,7 @@ Skip the API documentation hunt. This repo provides:
 
 1.  **Clone the Repository**
 
-      - Clone the repository to your local machine to get all the Requestly JSON files: git clone https://github.com/Ronakkadhi/awesome-ai-apis.git
+      - Clone the repository to your local machine to get all the Requestly JSON files: `git clone https://github.com/Ronakkadhi/awesome-ai-apis.git`
   
 2.  **Import to Requestly**
 
