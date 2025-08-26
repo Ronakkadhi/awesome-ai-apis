@@ -1,6 +1,6 @@
 {
   "OPENAI_API_KEY": {
-    "value": "your-api-key",
+    "value": "YOUR_API_KEY_HERE",
     "type": "string",
     "id": 0,
     "isSecret": false
@@ -12,7 +12,7 @@
     "isSecret": false
   },
   "OPENAI_MODEL": {
-    "value": "gpt-3.5-turbo",
+    "value": "GPT-3.5-TURBO",
     "type": "string",
     "id": 2,
     "isSecret": false
