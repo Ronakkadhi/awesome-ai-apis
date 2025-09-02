@@ -12,6 +12,7 @@ Skip the API documentation hunt. This repo provides:
   - **Pre-configured Variables** - Just add your API keys, and the requests are ready to go.
   - **Working Examples** - Real requests that you can send immediately.
 
+<img width="1439" height="900" alt="Screenshot 2025-08-26 at 7 13 59 PM" src="https://github.com/user-attachments/assets/a3460c60-769e-4547-86bc-46050c6a3ea6" />
 ***
 
 ### 🚀 Quick Start
@@ -82,7 +83,5 @@ Skip the API documentation hunt. This repo provides:
 - Each new API should include: Proper authentication headers, variables, and body
 
 ***
-<img width="1439" height="900" alt="Screenshot 2025-08-26 at 7 13 59 PM" src="https://github.com/user-attachments/assets/a3460c60-769e-4547-86bc-46050c6a3ea6" />
-
 
 **Made with ❤️ for the developer community**
