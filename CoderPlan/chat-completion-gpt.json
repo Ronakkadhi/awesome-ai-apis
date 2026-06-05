@@ -1,0 +1,38 @@
+{
+  "name": "Chat Completion (GPT)",
+  "request": {
+    "type": "http",
+    "url": "{{CODERPLAN_BASE_URL}}/chat/completions",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 2001,
+        "key": "Authorization",
+        "value": "Bearer {{CODERPLAN_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 2002,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"model\": \"{{CODERPLAN_GPT_MODEL}}\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful assistant.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"What are the key differences between REST and GraphQL?\"\n    }\n  ],\n  \"max_tokens\": 500,\n  \"temperature\": 0.7\n}",
+    "bodyContainer": {
+      "text": "{\n  \"model\": \"{{CODERPLAN_GPT_MODEL}}\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful assistant.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"What are the key differences between REST and GraphQL?\"\n    }\n  ],\n  \"max_tokens\": 500,\n  \"temperature\": 0.7\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}
