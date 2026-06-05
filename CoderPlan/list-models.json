@@ -1,0 +1,27 @@
+{
+  "name": "List Models",
+  "request": {
+    "type": "http",
+    "url": "{{CODERPLAN_BASE_URL}}/models",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 6001,
+        "key": "Authorization",
+        "value": "Bearer {{CODERPLAN_API_KEY}}",
+        "isEnabled": true
+      }
+    ],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

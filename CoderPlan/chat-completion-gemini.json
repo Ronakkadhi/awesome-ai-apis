@@ -1,0 +1,38 @@
+{
+  "name": "Chat Completion (Gemini)",
+  "request": {
+    "type": "http",
+    "url": "{{CODERPLAN_BASE_URL}}/chat/completions",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 3001,
+        "key": "Authorization",
+        "value": "Bearer {{CODERPLAN_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 3002,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"model\": \"{{CODERPLAN_GEMINI_MODEL}}\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Summarize the benefits of edge computing in 3 bullet points\"\n    }\n  ],\n  \"max_tokens\": 300,\n  \"temperature\": 0.5\n}",
+    "bodyContainer": {
+      "text": "{\n  \"model\": \"{{CODERPLAN_GEMINI_MODEL}}\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Summarize the benefits of edge computing in 3 bullet points\"\n    }\n  ],\n  \"max_tokens\": 300,\n  \"temperature\": 0.5\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

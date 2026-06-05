@@ -1,12 +1,12 @@
 ### Awesome AI APIs 🤖
 
-> A curated collection of 21 AI APIs with ready-to-use Requestly collections for instant testing.
+> A curated collection of 27 AI APIs with ready-to-use Requestly collections for instant testing.
 
 ### Why This Exists
 
 Skip the API documentation hunt. This repo provides:
 
-  - **21 AI APIs** - Curated and ready to test. More coming soon!
+  - **27 AI APIs** - Curated and ready to test. More coming soon!
   - **Provider-level Collections** - All APIs from a single provider (e.g., OpenAI) are grouped together in one file.
   - **Git-Controlled** - Seamlessly manage collections with standard Git commands.
   - **Pre-configured Variables** - Just add your API keys, and the requests are ready to go.
@@ -37,7 +37,7 @@ Skip the API documentation hunt. This repo provides:
 
 ***
 
-### Access All 21 APIs here
+### Access All 27 APIs here
 
 | **Name** | **Provider** | **Type** | **Docs / Website** |
 | :--- | :--- | :--- | :--- | 
@@ -61,6 +61,12 @@ Skip the API documentation hunt. This repo provides:
 | ElevenLabs V3 (Coming soon) | ElevenLabs | Text-to-Speech | [Docs](https://elevenlabs.io/docs/api-reference) |
 | AssemblyAI Summarize (Coming soon) | AssemblyAI | Summary from audio | [Docs](https://www.assemblyai.com/docs/api-reference) |
 | AssemblyAI (STT)(Coming soon) | AssemblyAI | Speech-to-Text | [Docs](https://www.assemblyai.com/docs/api-reference) |
+| CoderPlan (Claude) | CoderPlan | Unified LLM Gateway | [Docs](https://docs.coderplan.ai) |
+| CoderPlan (GPT) | CoderPlan | Unified LLM Gateway | [Docs](https://docs.coderplan.ai) |
+| CoderPlan (Gemini) | CoderPlan | Unified LLM Gateway | [Docs](https://docs.coderplan.ai) |
+| CoderPlan (DeepSeek) | CoderPlan | Unified LLM Gateway | [Docs](https://docs.coderplan.ai) |
+| CoderPlan (Grok) | CoderPlan | Unified LLM Gateway | [Docs](https://docs.coderplan.ai) |
+| CoderPlan (List Models) | CoderPlan | Unified LLM Gateway | [Docs](https://docs.coderplan.ai) |
 
 ***
 

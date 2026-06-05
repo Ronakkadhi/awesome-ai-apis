@@ -1,0 +1,38 @@
+{
+  "name": "Chat Completion (DeepSeek)",
+  "request": {
+    "type": "http",
+    "url": "{{CODERPLAN_BASE_URL}}/chat/completions",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 4001,
+        "key": "Authorization",
+        "value": "Bearer {{CODERPLAN_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 4002,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"model\": \"{{CODERPLAN_DEEPSEEK_MODEL}}\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Write a Python function to merge two sorted lists\"\n    }\n  ],\n  \"max_tokens\": 500,\n  \"temperature\": 0.3\n}",
+    "bodyContainer": {
+      "text": "{\n  \"model\": \"{{CODERPLAN_DEEPSEEK_MODEL}}\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Write a Python function to merge two sorted lists\"\n    }\n  ],\n  \"max_tokens\": 500,\n  \"temperature\": 0.3\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "CODERPLAN_API_KEY": {
+    "value": "your-api-key",
+    "type": "string",
+    "id": 0,
+    "isSecret": false
+  },
+  "CODERPLAN_BASE_URL": {
+    "value": "https://api.coderplan.ai/v1",
+    "type": "string",
+    "id": 1,
+    "isSecret": false
+  },
+  "CODERPLAN_MODEL": {
+    "value": "claude-sonnet-4-6-20250610",
+    "type": "string",
+    "id": 2,
+    "isSecret": false
+  },
+  "CODERPLAN_GPT_MODEL": {
+    "value": "gpt-4.1",
+    "type": "string",
+    "id": 3,
+    "isSecret": false
+  },
+  "CODERPLAN_GEMINI_MODEL": {
+    "value": "gemini-3.1-pro",
+    "type": "string",
+    "id": 4,
+    "isSecret": false
+  },
+  "CODERPLAN_DEEPSEEK_MODEL": {
+    "value": "deepseek-chat",
+    "type": "string",
+    "id": 5,
+    "isSecret": false
+  },
+  "CODERPLAN_GROK_MODEL": {
+    "value": "grok-3",
+    "type": "string",
+    "id": 6,
+    "isSecret": false
+  }
+}
