@@ -1,0 +1,38 @@
+{
+  "name": "SandBase Chat Completion",
+  "request": {
+    "type": "http",
+    "url": "{{SANDBASE_BASE_URL}}/chat/completions",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1756146475598,
+        "key": "Authorization",
+        "value": "Bearer {{SANDBASE_API_KEY}}",
+        "isEnabled": true
+      },
+      {
+        "id": 1756146502487,
+        "key": "Content-Type",
+        "value": "application/json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"model\": \"deepseek/deepseek-v4-flash\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Explain what tool calling is in one paragraph.\"\n    }\n  ]\n}",
+    "bodyContainer": {
+      "text": "{\n  \"model\": \"deepseek/deepseek-v4-flash\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Explain what tool calling is in one paragraph.\"\n    }\n  ]\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}
