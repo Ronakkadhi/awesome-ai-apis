@@ -1,0 +1,14 @@
+{
+  "SANDBASE_API_KEY": {
+    "value": "",
+    "type": "string",
+    "id": 0,
+    "isSecret": true
+  },
+  "SANDBASE_BASE_URL": {
+    "value": "https://api.sandbase.ai/v1",
+    "type": "string",
+    "id": 1,
+    "isSecret": false
+  }
+}

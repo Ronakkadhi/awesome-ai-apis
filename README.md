@@ -57,6 +57,7 @@ Skip the API documentation hunt. This repo provides:
 | OpenAI GPT oss 20b | OpenRouter | Text Generation | [Docs](https://openrouter.ai/docs) |
 | Groq (OpenAI-compatible) | Groq | Text/Chat LLM | [Docs](https://console.groq.com/docs/quickstart) |
 | Meta-llama/Llama-3.1-8B-Instruct | Groq | Text/Chat LLM | [Docs](https://groq.com/docs/api-reference/models) |
+| SandBase (Chat Completions) | SandBase | Text/Chat LLM | [Docs](https://www.sandbase.ai/docs/getting-started/quickstart) |
 | Mistral (Coming soon) | Mistral | Text/Chat LLM | [Docs](https://docs.mistral.ai/api/) |
 | ElevenLabs V3 (Coming soon) | ElevenLabs | Text-to-Speech | [Docs](https://elevenlabs.io/docs/api-reference) |
 | AssemblyAI Summarize (Coming soon) | AssemblyAI | Summary from audio | [Docs](https://www.assemblyai.com/docs/api-reference) |
